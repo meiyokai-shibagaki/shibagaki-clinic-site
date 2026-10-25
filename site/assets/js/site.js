@@ -1,3 +1,13 @@
+// 編集画面（Netlify Identity）の招待・パスワード再設定・メール確認のリンクはサイトのトップに届く。
+// パスワード設定の小窓は /admin/ にしか無いので、トークン付きで来たら /admin/ へ送る。
+(function () {
+  var h = window.location.hash || '';
+  if (/^#(invite_token|recovery_token|confirmation_token|email_change_token)=/.test(h) &&
+      window.location.pathname.indexOf('/admin/') !== 0) {
+    window.location.replace('/admin/' + h);
+  }
+})();
+
 /* 柴垣医院 テストサイト 共通スクリプト（外部ライブラリなし） */
 (function () {
   'use strict';
