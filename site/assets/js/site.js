@@ -1,10 +1,10 @@
 // 編集画面（Netlify Identity）の招待・パスワード再設定・メール確認のリンクはサイトのトップに届く。
-// パスワード設定の小窓は /admin/ にしか無いので、トークン付きで来たら /admin/ へ送る。
+// パスワード設定の小窓は専用ページ /admin/invite/ で開く（/admin/ 本体はトークンを消してしまう）。
 (function () {
   var h = window.location.hash || '';
   if (/^#(invite_token|recovery_token|confirmation_token|email_change_token)=/.test(h) &&
       window.location.pathname.indexOf('/admin/') !== 0) {
-    window.location.replace('/admin/' + h);
+    window.location.replace('/admin/invite/' + h);
   }
 })();
 

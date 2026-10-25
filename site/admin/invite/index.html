@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>編集画面 招待・パスワード設定 | 柴垣医院</title>
+<!-- 招待・パスワード再設定・メール確認のリンク専用ページ。
+     編集画面本体（/admin/）は URL の # 以降を画面切替に使うため、トークンが消えてしまう。
+     ここでは Netlify Identity のウィジェットだけを読み込み、トークンを処理したら /admin/ へ送る。 -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<style>
+  body { margin: 0; font-family: -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; background: #f4f6f8; color: #2c4256; }
+  main { max-width: 32rem; margin: 12vh auto 0; padding: 0 1.5rem; text-align: center; line-height: 1.8; }
+  h1 { font-size: 1.25rem; font-weight: 600; }
+  p { font-size: 1rem; }
+  a.button { display: inline-block; margin-top: 1rem; padding: .7rem 1.4rem; border-radius: 6px; background: #526c6e; color: #fff; text-decoration: none; font-size: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>柴垣医院 ホームページ 編集画面</h1>
+  <p id="msg">招待・パスワード設定の画面を開いています。表示されない場合は、下のボタンから編集画面へ進んでください。</p>
+  <a class="button" href="/admin/">編集画面へ</a>
+</main>
+<script>
+  (function () {
+    var hasToken = /^#(invite_token|recovery_token|confirmation_token|email_change_token)=/.test(window.location.hash || '');
+    if (!hasToken) {
+      document.getElementById('msg').textContent = 'このページは招待メールや再設定メールのリンクから開くものです。編集画面は下のボタンから開けます。';
+    }
+    if (window.netlifyIdentity) {
+      netlifyIdentity.on('login', function () { window.location.replace('/admin/'); });
+      netlifyIdentity.on('init', function (user) {
+        if (user && !hasToken) { window.location.replace('/admin/'); }
+      });
+    }
+  })();
+</script>
+</body>
+</html>
