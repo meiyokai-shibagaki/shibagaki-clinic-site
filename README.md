@@ -54,7 +54,7 @@ python3 build.py
 - GitHub の `main` にプッシュすると Netlify が自動でビルドして公開します（build：`python3 build.py`、publish：`site`）。
 - 手動で出す場合は `netlify deploy --prod --build`（`--no-build` ではエッジ関数が同梱されず Basic 認証が外れるため使わない）。
 - テスト公開の間は検索エンジンに載せない設定です（`X-Robots-Tag: noindex` と `<meta name="robots">`）。本番に切り替えるときは `src/data/site.json` の `production` を `true` にし、`netlify.toml` の `X-Robots-Tag` 行と `[[edge_functions]]`（Basic 認証）を外します。canonical・OGP・sitemap の URL は `production_base_url` に切り替わり、テストバナーが消えます。
-- Basic 認証の ID とパスワードは Netlify の環境変数（`SITE_USER` / `SITE_PASS`）で管理し、リポジトリには置きません。
+- 関係者限定の入口（`netlify/edge-functions/auth.ts`）：日本語のログイン画面（ID とパスワード・Cookie で 30 日保持）と、確認用の Basic 認証ヘッダー（`curl -u`）の両方に対応。ID とパスワードは Netlify の環境変数（`SITE_USER` / `SITE_PASS`）で管理し、リポジトリには置きません。パスワードを変えると全員のログインが無効になります。
 
 ## ライセンス・著作権
 

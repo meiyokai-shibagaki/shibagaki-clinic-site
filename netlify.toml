@@ -4,7 +4,7 @@
   command = "python3 build.py"
   publish = "site"
 
-# 全ページに Basic 認証（netlify/edge-functions/auth.ts）。ID/パスワードは環境変数 SITE_USER / SITE_PASS
+# 全ページに関係者限定の入口（netlify/edge-functions/auth.ts＝ログイン画面＋Basic 認証ヘッダー）。ID/パスワードは環境変数 SITE_USER / SITE_PASS
 [[edge_functions]]
   path = "/*"
   function = "auth"
