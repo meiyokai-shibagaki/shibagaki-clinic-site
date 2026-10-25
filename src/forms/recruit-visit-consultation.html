@@ -1,0 +1,52 @@
+<div class="contact-guide">
+  <p>「透析未経験でも大丈夫？」「子育てと両立できる？」――まずは職場を見て、話を聞いてみませんか。見学は30分程度です。日程はご相談のうえ決めます。応募を前提としないご相談も歓迎です。</p>
+  <ul class="contact-guide__links">
+    <li><a href="/recruit/">採用情報（募集要項）に戻る</a></li>
+    <li><a href="/recruit-application/">応募はこちら</a></li>
+  </ul>
+</div>
+<form class="wv-form" name="recruit-visit-consultation" method="POST" action="/thanks/?form=recruit-visit-consultation" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+  <input type="hidden" name="form-name" value="recruit-visit-consultation">
+  <input type="hidden" name="フォーム" value="見学・ご相談">
+  <p class="wv-form__honeypot" aria-hidden="true"><label>このフィールドは空のままにしてください <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+  <p class="wv-form__error" role="alert"></p>
+  <fieldset class="wv-form__row wv-form__row--choices">
+    <legend class="wv-form__label">ご希望の内容<span class="wv-form__req">必須</span></legend>
+    <div class="wv-form__field wv-form__choices">
+      <label><input type="radio" name="ご希望の内容" value="職場見学" required> 職場見学</label>
+      <label><input type="radio" name="ご希望の内容" value="採用についての相談（電話・オンライン可）"> 採用についての相談（電話・オンライン可）</label>
+      <label><input type="radio" name="ご希望の内容" value="見学と相談の両方"> 見学と相談の両方</label>
+    </div>
+  </fieldset>
+  <fieldset class="wv-form__row wv-form__row--choices">
+    <legend class="wv-form__label">見学を希望する拠点<span class="wv-form__opt">任意</span></legend>
+    <div class="wv-form__field wv-form__choices">
+      <label><input type="checkbox" name="見学希望拠点" value="自由が丘"> 自由が丘</label>
+      <label><input type="checkbox" name="見学希望拠点" value="戸越"> 戸越</label>
+      <label><input type="checkbox" name="見学希望拠点" value="久が原"> 久が原</label>
+    </div>
+  </fieldset>
+{{COMMON_FIELDS}}
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-role">職種</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field">
+      <select id="f-role" name="職種" required>
+        <option value="">選択してください</option>
+        <option>看護師・准看護師</option><option>臨床工学技士</option><option>医師</option><option>看護学生・その他</option>
+      </select>
+    </div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-job">現在のご職業・資格</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><input type="text" id="f-job" name="現在のご職業・資格" placeholder="例：看護師（病棟勤務）、腎臓内科 医師、看護学生　など"></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-date">ご希望の日時</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><textarea id="f-date" name="ご希望の日時" placeholder="例：11月第2週の平日午後、土曜午前　など（第3希望まで）"></textarea></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-body">聞いてみたいこと</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><textarea id="f-body" name="聞いてみたいこと" placeholder="勤務時間、教育体制、配属先など、気になることをお書きください"></textarea></div>
+  </div>
+{{PURPOSE:recruit}}{{CONSENT:送信する|recruit}}
+</form>

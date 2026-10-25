@@ -1,0 +1,123 @@
+.five-care-page,
+.five-care-page * {
+  box-sizing: border-box;
+}
+
+#main article .five-care-page {
+  margin: 0;
+  color: #424242;
+}
+
+#main article .five-care-page .five-care-page__intro {
+  margin: 0 0 42px;
+  padding: 25px 30px;
+  border-top: 1px solid rgba(111, 138, 140, .45);
+  border-bottom: 1px solid rgba(111, 138, 140, .45);
+  background: rgba(111, 138, 140, .08);
+  color: #424242;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 18px;
+  line-height: 2;
+}
+
+#main article .five-care-page .five-care-page__item {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 26px;
+  align-items: start;
+  margin: 0;
+  padding: 36px 0 38px;
+  border-top: 1px solid rgba(111, 138, 140, .3);
+}
+
+#main article .five-care-page .five-care-page__item:last-child {
+  border-bottom: 1px solid rgba(111, 138, 140, .3);
+}
+
+#main article .five-care-page .five-care-page__icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #fbf5f0;
+}
+
+#main article .five-care-page .five-care-page__icon img {
+  display: block;
+  width: 40px !important;
+  height: 40px !important;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  object-fit: contain;
+}
+
+#main article .five-care-page .five-care-page__title {
+  margin: 0 0 14px;
+  padding: 0 0 12px;
+  border: 0;
+  border-bottom: 1px solid rgba(111, 138, 140, .28);
+  background: none;
+  box-shadow: none;
+  color: #424242;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: .04em;
+  overflow-wrap: anywhere;
+}
+
+#main article .five-care-page .five-care-page__title::before,
+#main article .five-care-page .five-care-page__title::after {
+  content: none;
+}
+
+#main article .five-care-page .five-care-page__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 2.15;
+  overflow-wrap: anywhere;
+}
+
+#main article .five-care-page .five-care-page__content {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  #main article .five-care-page .five-care-page__intro {
+    margin-bottom: 30px;
+    padding: 20px 22px;
+    font-size: 16px;
+  }
+
+  #main article .five-care-page .five-care-page__item {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 14px;
+    padding: 27px 0 29px;
+  }
+
+  #main article .five-care-page .five-care-page__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  #main article .five-care-page .five-care-page__icon img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  #main article .five-care-page .five-care-page__title {
+    margin-bottom: 11px;
+    padding-bottom: 9px;
+    font-size: 19px;
+    line-height: 1.65;
+  }
+
+  #main article .five-care-page .five-care-page__text {
+    font-size: 15px;
+    line-height: 2;
+  }
+}

@@ -1,0 +1,48 @@
+<div class="contact-guide">
+  <p>担当されている利用者さん・患者さんについて、「腎機能が落ちていると言われた」「透析しながら在宅で過ごせるか」「訪問診療の対象になるか」など、個別のご相談を受け付けています。</p>
+  <p class="wv-form__note">ご家族の方は、<a href="/contact/">お問い合わせ</a>またはお電話（在宅診療部 03-3724-2626）でご相談ください。</p>
+  <p class="wv-form__note">このフォームには、<strong>患者さんの氏名・生年月日・住所などの個人情報は入力しないでください</strong>。概要のみをお知らせいただき、詳細はお電話（在宅診療部 03-3724-2626）または面談でお伺いします。</p>
+</div>
+<form class="wv-form" name="community-patient-consultation" method="POST" action="/thanks/?form=community-patient-consultation" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+  <input type="hidden" name="form-name" value="community-patient-consultation">
+  <input type="hidden" name="フォーム" value="患者さんについてのご相談">
+  <p class="wv-form__honeypot" aria-hidden="true"><label>このフィールドは空のままにしてください <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+  <p class="wv-form__error" role="alert"></p>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-org">事業所名</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field"><input type="text" id="f-org" name="事業所名" autocomplete="organization" required></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-role">職種</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field">
+      <select id="f-role" name="職種" required>
+        <option value="">選択してください</option>
+        <option>ケアマネジャー</option><option>訪問看護師</option><option>相談員・MSW</option><option>施設職員</option><option>医師</option><option>その他</option>
+      </select>
+    </div>
+  </div>
+{{COMMON_FIELDS}}
+  <fieldset class="wv-form__row wv-form__row--choices">
+    <legend class="wv-form__label">ご相談の種類<span class="wv-form__req">必須</span></legend>
+    <div class="wv-form__field wv-form__choices">
+      <label><input type="radio" name="ご相談の種類" value="訪問診療の導入・紹介" required> 訪問診療の導入・紹介</label>
+      <label><input type="radio" name="ご相談の種類" value="透析と在宅療養の両立"> 透析と在宅療養の両立</label>
+      <label><input type="radio" name="ご相談の種類" value="腹膜透析（PD）について"> 腹膜透析（PD）について</label>
+      <label><input type="radio" name="ご相談の種類" value="腎機能低下・保存期の相談"> 腎機能低下・保存期の相談</label>
+      <label><input type="radio" name="ご相談の種類" value="その他"> その他</label>
+    </div>
+  </fieldset>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-area">患者さんのお住まいの地域（区・町名まで）</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><input type="text" id="f-area" name="お住まいの地域" placeholder="例：目黒区自由が丘、世田谷区奥沢"></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-body">ご相談の概要</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><textarea id="f-body" name="ご相談の概要" placeholder="例：80代・要介護3・週3回の血液透析に通院中。通院が難しくなってきた。"></textarea><small>病状の詳細は、お電話または FAX でお知らせください。氏名・生年月日・住所（番地）は書かないでください。</small></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-date">ご連絡のご希望</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><input type="text" id="f-date" name="ご連絡のご希望" placeholder="例：平日午後に電話がほしい、メールで可"></div>
+  </div>
+{{PURPOSE:common}}{{CONSENT:相談する|consult}}
+</form>

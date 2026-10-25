@@ -1,0 +1,17 @@
+<!-- 共通：氏名・ふりがな・電話・メール -->
+<div class="wv-form__row">
+  <div class="wv-form__label"><label for="f-name">お名前</label><span class="wv-form__req">必須</span></div>
+  <div class="wv-form__field"><input type="text" id="f-name" name="お名前" autocomplete="name" required></div>
+</div>
+<div class="wv-form__row">
+  <div class="wv-form__label"><label for="f-kana">ふりがな</label><span class="wv-form__opt">任意</span></div>
+  <div class="wv-form__field"><input type="text" id="f-kana" name="ふりがな"></div>
+</div>
+<div class="wv-form__row">
+  <div class="wv-form__label"><label for="f-tel">お電話番号</label><span class="wv-form__req wv-form__req--either">どちらか必須</span></div>
+  <div class="wv-form__field"><input type="tel" id="f-tel" name="電話番号" autocomplete="tel" inputmode="tel" placeholder="例：03-3724-0066" data-require-one="contact"><small>お電話番号とメールアドレスは、どちらか一方をご入力ください。日中つながりやすい番号をお願いします。</small></div>
+</div>
+<div class="wv-form__row">
+  <div class="wv-form__label"><label for="f-email">メールアドレス</label><span class="wv-form__req wv-form__req--either">どちらか必須</span></div>
+  <div class="wv-form__field"><input type="email" id="f-email" name="メールアドレス" autocomplete="email" inputmode="email" data-require-one="contact"><small>日中に連絡の取れるメールアドレスをお願いします。携帯電話のメールは、パソコンからのメールを受信できる設定かご確認ください。</small></div>
+</div>

@@ -1,0 +1,319 @@
+#main article .director-message__hero {
+    display: grid;
+    grid-template-columns: minmax(0, 42%) minmax(0, 58%);
+    margin: 0 0 70px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(50, 50, 50, .06);
+  }
+
+  #main article .director-message__photo {
+    margin: 0;
+  }
+
+  #main article .director-message__photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  #main article .director-message__lead {
+    display: grid;
+    align-content: center;
+    padding: 48px 7.5%;
+  }
+
+  #main article .director-message__lead h3 {
+    margin: 0 0 24px;
+    padding: 0;
+    color: #424242;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.65;
+    letter-spacing: .12em;
+  }
+
+  #main article .director-message__lead p {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  #main article .director-message__body {
+    margin: 0;
+  }
+
+  #main article .director-message__body > p {
+    margin: 0 0 30px;
+    font-size: 16px;
+    line-height: 2.2;
+  }
+
+  #main article .director-message__body blockquote {
+    margin: 48px 0;
+    padding: 28px 34px;
+    background: #f4f7f5;
+    border: 0;
+    border-left: 3px solid #6f8a8c;
+    color: #424242;
+    font-size: 20px;
+    line-height: 1.85;
+    letter-spacing: .08em;
+  }
+
+  #main article .director-message__statements {
+    margin: 52px 0 0;
+  }
+
+  #main article .director-message__statements > h3 {
+    margin: 0 0 22px;
+    padding: 0 0 14px;
+    border-bottom: 1px solid #d9e1e1;
+    color: #424242;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: .08em;
+  }
+
+  #main article .director-message__statement {
+    margin-top: 44px;
+  }
+
+  #main article .director-message__statement h4 {
+    margin: 0 0 18px;
+    padding: 0 0 0 16px;
+    border-left: 3px solid #6f8a8c;
+    color: #424242;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+
+  #main article .director-message__statements > p,
+  #main article .director-message__statement > p {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 2.2;
+  }
+
+  #main article .director-message__principles {
+    margin: 24px 0;
+    padding: 22px 28px;
+    background: #f4f7f5;
+    border-left: 3px solid #6f8a8c;
+    color: #424242;
+    font-size: 16px;
+    line-height: 2.1;
+  }
+
+  #main article .director-message__body > p.director-message__signature {
+    margin: 50px 0 0;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: .12em;
+    text-align: right;
+  }
+
+  #main article .director-message__profiles,
+  #main article .director-message__about {
+    margin-top: 72px;
+  }
+
+  #main article .director-message__section-title {
+    margin: 0 0 32px;
+    padding: 0 0 14px;
+    border-bottom: 1px solid #d9e1e1;
+    color: #424242;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: .08em;
+  }
+
+  #main article .director-message__profile {
+    padding: 0 0 52px;
+  }
+
+  #main article .director-message__profile + .director-message__profile {
+    padding-top: 48px;
+    border-top: 1px solid #d9e1e1;
+  }
+
+  #main article .director-message__name {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #424242;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: .08em;
+  }
+
+  #main article .director-message__position {
+    margin: 0 0 30px;
+    color: #555;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.8;
+  }
+
+  #main article .director-message__profile h5,
+  #main article .director-message__about h4 {
+    margin: 30px 0 12px;
+    padding: 0;
+    color: #526c6e;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+
+  #main article .director-message__profile p,
+  #main article .director-message__profile li,
+  #main article .director-message__about p,
+  #main article .director-message__overview dd {
+    color: #555;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  #main article .director-message__profile p {
+    margin: 0;
+  }
+
+  #main article .director-message__profile ul {
+    margin: 0;
+    padding-left: 1.4em;
+  }
+
+  #main article .director-message__about > p {
+    margin: 0 0 24px;
+  }
+
+  #main article .director-message__about h4 {
+    margin-top: 42px;
+    padding-left: 16px;
+    border-left: 3px solid #6f8a8c;
+    color: #424242;
+  }
+
+  #main article .director-message__about h4 + p,
+  #main article .director-message__about p + p {
+    margin-top: 0;
+  }
+
+  #main article .director-message__overview {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    margin: 42px 0 0;
+    border-top: 1px solid #d9e1e1;
+  }
+
+  #main article .director-message__overview dt,
+  #main article .director-message__overview dd {
+    margin: 0;
+    padding: 18px 20px;
+    border-bottom: 1px solid #d9e1e1;
+  }
+
+  #main article .director-message__overview dt {
+    background: #f4f7f5;
+    color: #424242;
+    font-weight: 600;
+    line-height: 2;
+  }
+
+  @media screen and (max-width: 700px) {
+    #main article .director-message__hero {
+      grid-template-columns: 1fr;
+      margin-bottom: 48px;
+    }
+
+    #main article .director-message__photo img {
+      height: auto;
+      min-height: 0;
+      object-fit: contain;
+    }
+
+    #main article .director-message__lead {
+      padding: 32px 28px 36px;
+    }
+
+    #main article .director-message__lead h3 {
+      font-size: 23px;
+    }
+
+    #main article .director-message__lead p,
+    #main article .director-message__body > p,
+    #main article .director-message__statements > p,
+    #main article .director-message__statement > p,
+    #main article .director-message__principles {
+      font-size: 15px;
+    }
+
+    #main article .director-message__statements {
+      margin-top: 42px;
+    }
+
+    #main article .director-message__statements > h3 {
+      font-size: 21px;
+    }
+
+    #main article .director-message__statement {
+      margin-top: 36px;
+    }
+
+    #main article .director-message__statement h4 {
+      font-size: 18px;
+    }
+
+    #main article .director-message__principles {
+      padding: 19px 20px;
+    }
+
+    #main article .director-message__body blockquote {
+      margin: 38px 0;
+      padding: 23px 24px;
+      font-size: 18px;
+    }
+
+    #main article .director-message__profiles,
+    #main article .director-message__about {
+      margin-top: 54px;
+    }
+
+    #main article .director-message__section-title {
+      margin-bottom: 26px;
+      font-size: 21px;
+    }
+
+    #main article .director-message__name {
+      font-size: 20px;
+    }
+
+    #main article .director-message__profile p,
+    #main article .director-message__profile li,
+    #main article .director-message__about p,
+    #main article .director-message__overview dd {
+      font-size: 15px;
+    }
+
+    #main article .director-message__overview {
+      grid-template-columns: 1fr;
+    }
+
+    #main article .director-message__overview dt {
+      padding-bottom: 6px;
+      border-bottom: 0;
+    }
+
+    #main article .director-message__overview dd {
+      padding-top: 6px;
+    }
+  }

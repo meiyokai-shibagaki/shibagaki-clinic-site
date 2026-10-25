@@ -1,0 +1,238 @@
+.peritoneal-dialysis-page,
+  .peritoneal-dialysis-page * {
+    box-sizing: border-box;
+  }
+
+  #main article .peritoneal-dialysis-page {
+    margin: 0;
+    color: #424242;
+  }
+
+  #main article .peritoneal-dialysis-page p {
+    font-size: 16px;
+    line-height: 2.15;
+  }
+
+  #main article .peritoneal-dialysis-page__lead {
+    margin: 0 0 34px;
+    padding: 30px 34px;
+    border-top: 1px solid rgba(111, 138, 140, .45);
+    border-bottom: 1px solid rgba(111, 138, 140, .45);
+    background: rgba(111, 138, 140, .08);
+  }
+
+  #main article .peritoneal-dialysis-page__lead > p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 2.1;
+  }
+
+  #main article .peritoneal-dialysis-page__message {
+    margin: 0 0 68px;
+    padding: 0 0 0 22px;
+    border-left: 3px solid #6f8a8c;
+  }
+
+  #main article .peritoneal-dialysis-page__message > p {
+    margin: 0;
+  }
+
+  #main article .peritoneal-dialysis-page__section {
+    margin: 0 0 70px;
+  }
+
+  #main article .peritoneal-dialysis-page__section > h3 {
+    margin: 0 0 30px;
+    padding: 10px 0 13px 22px;
+    border-left: 3px solid #6f8a8c;
+    border-bottom: 1px solid rgba(111, 138, 140, .28);
+    color: #424242;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: .06em;
+  }
+
+  #main article .peritoneal-dialysis-page__section > p {
+    margin: 0;
+  }
+
+  #main article .peritoneal-dialysis-page__methods {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 0 0 24px;
+  }
+
+  #main article .peritoneal-dialysis-page__method {
+    padding: 29px 28px 27px;
+    border-top: 3px solid #6f8a8c;
+    background: #fbfdfc;
+    box-shadow: 0 8px 24px rgba(50, 50, 50, .05);
+  }
+
+  #main article .peritoneal-dialysis-page__method-abbreviation {
+    display: block;
+    margin: 0 0 9px;
+    color: #526c6e;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: .05em;
+  }
+
+  #main article .peritoneal-dialysis-page__method > h4 {
+    margin: 0 0 13px;
+    color: #536f72;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  #main article .peritoneal-dialysis-page__method > p,
+  #main article .peritoneal-dialysis-page__method-note {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  #main article .peritoneal-dialysis-page__wishes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 18px;
+    margin: 28px 0 0;
+    padding: 26px 28px;
+    border: 1px solid rgba(111, 138, 140, .3);
+    background: #fbfdfc;
+  }
+
+  #main article .peritoneal-dialysis-page__wish {
+    margin: 0;
+    padding: 9px 8px 9px 29px;
+    position: relative;
+    border-bottom: 1px dotted rgba(111, 138, 140, .45);
+    color: #536f72;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  #main article .peritoneal-dialysis-page__wish::before {
+    content: "○";
+    position: absolute;
+    left: 5px;
+    color: #526c6e;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+
+  #main article .peritoneal-dialysis-page__flexible {
+    margin: 28px 0 0;
+    padding: 27px 30px;
+    border-left: 4px solid #b8aa78;
+    background: #f7f5ed;
+  }
+
+  #main article .peritoneal-dialysis-page__flexible > h4 {
+    margin: 0 0 12px;
+    color: #5e6455;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  #main article .peritoneal-dialysis-page__flexible > p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  #main article .peritoneal-dialysis-page__closing {
+    margin: 0;
+    padding: 30px 34px;
+    border-top: 1px solid rgba(111, 138, 140, .45);
+    border-bottom: 1px solid rgba(111, 138, 140, .45);
+    background: rgba(111, 138, 140, .08);
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  }
+
+  #main article .peritoneal-dialysis-page__closing > p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 2.15;
+  }
+
+  @media screen and (max-width: 768px) {
+    #main article .peritoneal-dialysis-page p {
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    #main article .peritoneal-dialysis-page__lead {
+      margin-bottom: 28px;
+      padding: 22px;
+    }
+
+    #main article .peritoneal-dialysis-page__lead > p {
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    #main article .peritoneal-dialysis-page__message {
+      margin-bottom: 50px;
+      padding-left: 17px;
+    }
+
+    #main article .peritoneal-dialysis-page__section {
+      margin-bottom: 52px;
+    }
+
+    #main article .peritoneal-dialysis-page__section > h3 {
+      margin-bottom: 24px;
+      padding-left: 16px;
+      font-size: 21px;
+    }
+
+    #main article .peritoneal-dialysis-page__methods,
+    #main article .peritoneal-dialysis-page__wishes {
+      grid-template-columns: 1fr;
+    }
+
+    #main article .peritoneal-dialysis-page__methods {
+      gap: 14px;
+    }
+
+    #main article .peritoneal-dialysis-page__method {
+      padding: 23px 22px;
+    }
+
+    #main article .peritoneal-dialysis-page__method > h4,
+    #main article .peritoneal-dialysis-page__flexible > h4 {
+      font-size: 17px;
+    }
+
+    #main article .peritoneal-dialysis-page__method > p,
+    #main article .peritoneal-dialysis-page__method-note,
+    #main article .peritoneal-dialysis-page__flexible > p {
+      font-size: 14px;
+    }
+
+    #main article .peritoneal-dialysis-page__wishes {
+      gap: 0;
+      padding: 20px 18px;
+    }
+
+    #main article .peritoneal-dialysis-page__wish {
+      font-size: 15px;
+    }
+
+    #main article .peritoneal-dialysis-page__flexible,
+    #main article .peritoneal-dialysis-page__closing {
+      padding: 24px 22px;
+    }
+
+    #main article .peritoneal-dialysis-page__closing > p {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }

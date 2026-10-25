@@ -1,0 +1,25 @@
+{
+  "slides": [
+    {
+      "image": "/assets/img/top-slide-01-consultation-20260930.jpg",
+      "title": "健診で腎機能の低下を指摘されたら、早めにご相談ください。",
+      "desc": "成人の5人に1人がCKD（慢性腎臓病）と推計されています（日本腎臓学会編『CKD診療ガイド2024』）。自覚症状がないまま進行することもあり、早めの受診・相談が腎臓を守る第一歩です。",
+      "link": "/ckd-consultation/",
+      "note": true
+    },
+    {
+      "image": "/assets/img/slide02.jpg",
+      "title": "「透析治療に選択肢を」 あなたらしい生活を守るために。",
+      "desc": "透析治療には、血液透析（HD）や腹膜透析（PD）など様々な選択肢があります。生活や体調、希望に合わせて、自分らしく過ごせる治療を一緒に考えます。",
+      "link": "/dialysis-basics/",
+      "note": true
+    },
+    {
+      "image": "/assets/img/recruitment-home-care-02.jpg",
+      "title": "「家で過ごしたい」その想いに応える在宅医療を。",
+      "desc": "住み慣れた自宅で安心して過ごせるように、医師が定期的に伺います。訪問診療を受けている方からのご連絡は、24時間365日、電話でお受けします。",
+      "link": "/home-medical-care/",
+      "note": true
+    }
+  ]
+}

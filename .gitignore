@@ -1,0 +1,4 @@
+.netlify/
+.DS_Store
+deno.lock
+__pycache__/

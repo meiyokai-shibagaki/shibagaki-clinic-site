@@ -1,0 +1,61 @@
+<div class="contact-guide">
+  <p>柴垣医院の採用にご応募いただき、ありがとうございます。下記フォームに入力のうえ送信してください。担当者より、面接・見学の日程などについてご連絡いたします。</p>
+  <ul class="contact-guide__links">
+    <li><a href="/recruit/">採用情報（募集要項）に戻る</a></li>
+    <li><a href="/recruit-visit-consultation/">応募前の見学・相談はこちら</a></li>
+  </ul>
+</div>
+<form class="wv-form" name="recruit-application" method="POST" action="/thanks/?form=recruit-application" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+  <input type="hidden" name="form-name" value="recruit-application">
+  <input type="hidden" name="フォーム" value="採用のご応募">
+  <p class="wv-form__honeypot" aria-hidden="true"><label>このフィールドは空のままにしてください <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+  <p class="wv-form__error" role="alert"></p>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-position">応募職種</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field">
+      <select id="f-position" name="応募職種" required>
+        <option value="">選択してください</option>
+{{POSITION_OPTIONS}}
+        <option>その他の職種（下に記入してください）</option>
+      </select>
+    </div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-position-other">その他の職種</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><input type="text" id="f-position-other" name="その他の職種" placeholder="応募職種で「その他」を選んだ方はご記入ください"></div>
+  </div>
+  <fieldset class="wv-form__row wv-form__row--choices">
+    <legend class="wv-form__label">希望する雇用形態<span class="wv-form__req">必須</span></legend>
+    <div class="wv-form__field wv-form__choices">
+      <label><input type="radio" name="雇用形態" value="常勤" required> 常勤</label>
+      <label><input type="radio" name="雇用形態" value="非常勤（パート）"> 非常勤（パート）</label>
+      <label><input type="radio" name="雇用形態" value="相談したい"> 相談したい</label>
+    </div>
+  </fieldset>
+  <fieldset class="wv-form__row wv-form__row--choices">
+    <legend class="wv-form__label">希望する勤務地<span class="wv-form__opt">任意</span></legend>
+    <div class="wv-form__field wv-form__choices">
+      <label><input type="checkbox" name="希望勤務地" value="自由が丘"> 自由が丘</label>
+      <label><input type="checkbox" name="希望勤務地" value="戸越"> 戸越</label>
+      <label><input type="checkbox" name="希望勤務地" value="久が原"> 久が原</label>
+    </div>
+  </fieldset>
+{{COMMON_FIELDS}}
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-license">保有資格</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field"><input type="text" id="f-license" name="保有資格" placeholder="例：看護師（2015年取得）" required></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-experience">これまでの経験</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><textarea id="f-experience" name="これまでの経験" placeholder="例：急性期病棟 5年、透析経験なし　など"></textarea><small>透析未経験の方も歓迎しています。履歴書・職務経歴書は面接時にお持ちください。</small></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-start">勤務開始の希望時期</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><input type="text" id="f-start" name="勤務開始希望時期" placeholder="例：2026年12月〜、相談したい"></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-body">ご質問・ご要望</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><textarea id="f-body" name="ご質問・ご要望" placeholder="勤務時間や日数のご希望、気になっていることなど"></textarea></div>
+  </div>
+{{PURPOSE:recruit}}{{CONSENT:応募する|recruit}}
+</form>

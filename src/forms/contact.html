@@ -1,0 +1,48 @@
+<div class="contact-guide">
+  <p class="wv-form__caution"><strong>このフォームでお受けすること：</strong>見学・転院・臨時透析・在宅医療などのご相談のきっかけ（折り返しのご連絡先をいただき、詳しくはお電話でお伺いします）、ホームページの内容についてのご質問、医療機関・事業者からのご連絡、採用について。<br>
+  <strong>お電話でお願いすること：</strong>ご予約、緊急のご連絡、個別の病状や検査結果についてのご相談。</p>
+  <ul class="contact-guide__tel">
+{{CONTACT_TELS}}
+  </ul>
+  <p class="wv-form__note">受付時間は各院の診療時間内です（診療時間は各院のページをご覧ください）。訪問診療を受けている方の緊急のご連絡は、契約時にお渡しした連絡先へお願いします。</p>
+  <ul class="contact-guide__links">
+    <li><a href="/recruit-application/">採用への応募はこちら</a></li>
+    <li><a href="/recruit-visit-consultation/">職場見学・採用相談はこちら</a></li>
+    <li><a href="/community-seminar-application/">勉強会のお申し込みはこちら</a></li>
+    <li><a href="/community-patient-consultation/">患者さんについての個別相談はこちら</a></li>
+  </ul>
+</div>
+<form class="wv-form" name="contact" method="POST" action="/thanks/?form=contact" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+  <input type="hidden" name="form-name" value="contact">
+  <input type="hidden" name="フォーム" value="お問い合わせ">
+  <p class="wv-form__honeypot" aria-hidden="true"><label>このフィールドは空のままにしてください <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+  <p class="wv-form__error" role="alert"></p>
+  <fieldset class="wv-form__row wv-form__row--choices">
+    <legend class="wv-form__label">お問い合わせの種類<span class="wv-form__req">必須</span></legend>
+    <div class="wv-form__field wv-form__choices" id="f-kind">
+      <label><input type="radio" name="お問い合わせの種類" value="外来・透析について" required> 外来・透析について</label>
+      <label><input type="radio" name="お問い合わせの種類" value="透析の見学・転院"> 透析の見学・転院</label>
+      <label><input type="radio" name="お問い合わせの種類" value="臨時透析（旅行・出張）"> 臨時透析（旅行・出張）</label>
+      <label><input type="radio" name="お問い合わせの種類" value="腹膜透析（PD）について"> 腹膜透析（PD）について</label>
+      <label><input type="radio" name="お問い合わせの種類" value="在宅医療のご相談"> 在宅医療のご相談</label>
+      <label><input type="radio" name="お問い合わせの種類" value="医療機関・事業者からのご連絡"> 医療機関・事業者からのご連絡</label>
+      <label><input type="radio" name="お問い合わせの種類" value="採用について"> 採用について</label>
+      <label><input type="radio" name="お問い合わせの種類" value="その他"> その他</label>
+    </div>
+  </fieldset>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-clinic">ご希望の拠点</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field">
+      <select id="f-clinic" name="ご希望の拠点">
+        <option value="">選択してください</option>
+        <option>自由が丘</option><option>戸越</option><option>久が原</option><option>在宅診療部</option><option>未定・わからない</option>
+      </select>
+    </div>
+  </div>
+{{COMMON_FIELDS}}
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-body">お問い合わせ内容</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field"><textarea id="f-body" name="お問い合わせ内容" required></textarea><small>病名・服薬内容・検査値などは書かず、折り返しのご連絡の際にお知らせください。</small></div>
+  </div>
+{{PURPOSE:common}}{{CONSENT:送信する|contact}}
+</form>

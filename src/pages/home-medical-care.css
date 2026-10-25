@@ -1,0 +1,535 @@
+#main article .home-care-page {
+    margin: 0;
+    color: #424242;
+  }
+
+  #main article .home-care-page p {
+    font-size: 16px;
+    line-height: 2.15;
+  }
+
+  #main article .home-care-page__lead-photo {
+    margin: 0 0 54px;
+  }
+
+  #main article .home-care-page__lead-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #main article .home-care-page__hero {
+    display: grid;
+    grid-template-columns: minmax(0, 52%) minmax(0, 48%);
+    align-items: center;
+    margin: 0 0 38px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(50, 50, 50, .06);
+  }
+
+  #main article .home-care-page__hero-copy {
+    padding: 48px 8%;
+  }
+
+  #main article .home-care-page__profile {
+    margin: 0 0 24px;
+    padding-left: 16px;
+    border-left: 3px solid #6f8a8c;
+    color: #526c6e;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: .1em;
+  }
+
+  #main article .home-care-page__profile > .home-care-page__profile-name {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  #main article .home-care-page__hero-copy > p:last-child {
+    margin-bottom: 0;
+  }
+
+  #main article .home-care-page__hero-image {
+    align-self: stretch;
+    margin: 0;
+  }
+
+  #main article .home-care-page__hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    object-fit: cover;
+    object-position: center 25%;
+  }
+
+  #main article .home-care-page__intro {
+    margin: 0 0 30px;
+  }
+
+  #main article .home-care-page__intro > p {
+    margin: 0 0 24px;
+    break-inside: avoid;
+  }
+
+  #main article .home-care-page__statement {
+    margin: 24px 0 72px;
+    padding: 30px 34px;
+    background: rgba(111, 138, 140, .08);
+    border-top: 1px solid rgba(111, 138, 140, .55);
+    border-bottom: 1px solid rgba(111, 138, 140, .55);
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  }
+
+  #main article .home-care-page__statement > p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 2.15;
+  }
+
+  #main article .home-care-page__section {
+    margin: 0 0 72px;
+  }
+
+  #main article .home-care-page__section > h3 {
+    margin: 0 0 30px;
+    padding: 10px 0 13px 22px;
+    position: relative;
+    border-left: 3px solid #6f8a8c;
+    border-bottom: 1px solid rgba(111, 138, 140, .28);
+    color: #424242;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: .06em;
+  }
+
+  #main article .home-care-page__section > h3 small {
+    font-size: .62em;
+    font-weight: 400;
+    letter-spacing: .03em;
+  }
+
+  #main article .home-care-page__wishes-layout {
+    display: grid;
+    grid-template-columns: minmax(250px, 36%) minmax(0, 64%);
+    gap: 38px;
+    align-items: stretch;
+  }
+
+  #main article .home-care-page__wishes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    margin: 0;
+    padding: 30px 28px;
+    background: rgba(111, 138, 140, .1);
+    border-radius: 18px 4px 18px 4px;
+    color: #536f72;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  }
+
+  #main article .home-care-page__wishes > p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.9;
+  }
+
+  #main article .home-care-page__wishes-copy > p {
+    margin: 0 0 24px;
+  }
+
+  #main article .home-care-page__wishes-copy > p:last-child {
+    margin-bottom: 0;
+  }
+
+  #main article .home-care-page__photo {
+    margin: 40px 0 0;
+  }
+
+  #main article .home-care-page__photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #main article .home-care-page__kidney-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 55%) minmax(280px, 45%);
+    gap: 38px;
+    align-items: start;
+  }
+
+  #main article .home-care-page__kidney-layout > p {
+    margin: 0;
+  }
+
+  #main article .home-care-page__continuity {
+    padding: 28px 30px;
+    background: #f7f5ed;
+    border-left: 4px solid #b8aa78;
+  }
+
+  #main article .home-care-page__continuity > h4 {
+    margin: 0 0 14px;
+    color: #5e6455;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.65;
+  }
+
+  #main article .home-care-page__continuity > p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  #main article .home-care-page__consult {
+    padding: 34px;
+    border: 1px solid rgba(111, 138, 140, .32);
+    background: #fbfdfc;
+  }
+
+  #main article .home-care-page__checklist {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 26px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #main article .home-care-page__checklist > li {
+    margin: 0;
+    padding: 11px 8px 11px 32px;
+    position: relative;
+    border-bottom: 1px dotted rgba(111, 138, 140, .45);
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  #main article .home-care-page__checklist > li::before {
+    content: "✓";
+    position: absolute;
+    left: 7px;
+    color: #526c6e;
+    font-weight: 700;
+  }
+
+  #main article .home-care-page__note {
+    margin: 20px 0 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  #main article .home-care-page__features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  #main article .home-care-page__feature {
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 15px;
+    align-items: start;
+    padding: 26px;
+    border: 1px solid rgba(111, 138, 140, .3);
+    border-radius: 12px 3px 12px 3px;
+    background: #fff;
+  }
+
+  #main article .home-care-page__feature-number {
+    color: #526c6e;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    line-height: 1.2;
+  }
+
+  #main article .home-care-page__feature h4 {
+    margin: 0 0 8px;
+    color: #536f72;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.55;
+  }
+
+  #main article .home-care-page__feature p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  #main article .home-care-page__services {
+    border-top: 1px solid rgba(111, 138, 140, .35);
+  }
+
+  #main article .home-care-page__service {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    border-bottom: 1px solid rgba(111, 138, 140, .35);
+  }
+
+  #main article .home-care-page__service > dt,
+  #main article .home-care-page__service > dd {
+    margin: 0;
+    padding: 18px 22px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  #main article .home-care-page__service > dt {
+    background: rgba(111, 138, 140, .1);
+    color: #536f72;
+    font-weight: 700;
+  }
+
+  #main article .home-care-page__flow {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  #main article .home-care-page__step {
+    padding: 24px 20px;
+    position: relative;
+    border-top: 3px solid #6f8a8c;
+    background: rgba(111, 138, 140, .08);
+  }
+
+  #main article .home-care-page__step:not(:last-child)::after {
+    content: "›";
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    z-index: 2;
+    transform: translateY(-50%);
+    color: #526c6e;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  #main article .home-care-page__step-number {
+    color: #526c6e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .08em;
+  }
+
+  #main article .home-care-page__step h4 {
+    margin: 7px 0 12px;
+    color: #536f72;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  #main article .home-care-page__step p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  #main article .home-care-page__access {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+  }
+
+  #main article .home-care-page__access-card {
+    padding: 28px 30px;
+    background: rgba(111, 138, 140, .06);
+  }
+
+  #main article .home-care-page__access-card h4 {
+    margin: 0 0 14px;
+    color: #526c6e;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  #main article .home-care-page__access-card p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  #main article .home-care-page__access-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  #main article .home-care-page__access-card a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  #main article .home-care-page__access-map {
+    display: block;
+    width: 100%;
+    height: 450px;
+    margin: 28px 0 0;
+    border: 0;
+  }
+
+  @media screen and (max-width: 700px) {
+    #main article .home-care-page p {
+      font-size: 15px;
+      line-height: 2.05;
+    }
+
+    #main article .home-care-page__lead-photo {
+      margin-bottom: 40px;
+    }
+
+    #main article .home-care-page__lead-photo img {
+      aspect-ratio: 4 / 3;
+    }
+
+    #main article .home-care-page__hero {
+      grid-template-columns: 1fr;
+      margin-bottom: 32px;
+    }
+
+    #main article .home-care-page__hero-copy {
+      padding: 34px 27px;
+    }
+
+    #main article .home-care-page__profile {
+      font-size: 14px;
+    }
+
+    #main article .home-care-page__hero-image img {
+      min-height: 0;
+      aspect-ratio: 4 / 3;
+    }
+
+    #main article .home-care-page__intro {
+      column-count: 1;
+    }
+
+    #main article .home-care-page__statement {
+      margin-bottom: 54px;
+      padding: 24px 22px;
+    }
+
+    #main article .home-care-page__statement > p {
+      font-size: 16px;
+    }
+
+    #main article .home-care-page__section {
+      margin-bottom: 54px;
+    }
+
+    #main article .home-care-page__section > h3 {
+      margin-bottom: 24px;
+      padding-left: 16px;
+      font-size: 21px;
+    }
+
+    #main article .home-care-page__wishes-layout,
+    #main article .home-care-page__kidney-layout {
+      grid-template-columns: 1fr;
+      gap: 26px;
+    }
+
+    #main article .home-care-page__wishes {
+      padding: 25px 23px;
+    }
+
+    #main article .home-care-page__photo img {
+      aspect-ratio: 4 / 3;
+    }
+
+    #main article .home-care-page__consult {
+      padding: 26px 22px;
+    }
+
+    #main article .home-care-page__checklist,
+    #main article .home-care-page__features {
+      grid-template-columns: 1fr;
+    }
+
+    #main article .home-care-page__feature {
+      padding: 22px 19px;
+    }
+
+    #main article .home-care-page__service {
+      grid-template-columns: 1fr;
+    }
+
+    #main article .home-care-page__service > dt {
+      padding-bottom: 8px;
+    }
+
+    #main article .home-care-page__service > dd {
+      padding-top: 8px;
+    }
+
+    #main article .home-care-page__flow {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    #main article .home-care-page__step:not(:last-child)::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      top: auto;
+      right: 50%;
+      bottom: -18px;
+      border-right: 2px solid #6f8a8c;
+      border-bottom: 2px solid #6f8a8c;
+      transform: translateX(50%) rotate(45deg);
+    }
+
+    #main article .home-care-page__access {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    #main article .home-care-page__access-card {
+      padding: 24px 22px;
+    }
+
+    #main article .home-care-page__access-card p {
+      font-size: 15px;
+    }
+
+    #main article .home-care-page__access-map {
+      height: 320px;
+      margin-top: 20px;
+    }
+  }
+
+/* 訪問エリア（261025 追加） */
+#main article .home-care-page__area { padding: 28px 30px; background: #fff; box-shadow: 0 10px 30px rgba(50,50,50,.06); }
+#main article .home-care-page__area h3 { margin-top: 0; }
+#main article .home-care-page__area-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0 0 18px; padding: 0; list-style: none; }
+#main article .home-care-page__area-list li { display: flex; flex-direction: column; justify-content: center; margin: 0; padding: 12px 14px; border: 1px solid #dfe6e6; border-radius: 6px; list-style: none; font-size: 17px; text-align: center; }
+#main article .home-care-page__area-sub { color: #697475; font-size: 13px; }
+#main article .home-care-page__area-tag { flex: 0 0 auto; padding: 2px 10px; border-radius: 3px; background: #526c6e; color: #fff; font-size: 13px; font-weight: 600; letter-spacing: .06em; }
+#main article .home-care-page__area-notes { margin: 0; padding-left: 1.3em; }
+#main article .home-care-page__area-notes li { margin: 4px 0; font-size: 15px; }
+@media screen and (max-width: 600px) {
+  #main article .home-care-page__area { padding: 20px 16px; }
+  #main article .home-care-page__area-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+#main article .home-care-page__area-map { margin: 6px 0 18px; }
+#main article .home-care-page__area-map img { display: block; width: 100%; max-width: 720px; height: auto; margin: 0 auto; border: 1px solid #e3e6e6; border-radius: 6px; }
+#main article .home-care-page__area-map figcaption { margin-top: 6px; color: #697475; font-size: 13px; text-align: center; }
+
+#main article .home-care-page__meguro { padding: 24px 30px; background: #fff; box-shadow: 0 10px 30px rgba(50,50,50,.06); }
+#main article .home-care-page__meguro h3 { margin-top: 0; }
+@media screen and (max-width: 600px) { #main article .home-care-page__meguro { padding: 20px 16px; } }

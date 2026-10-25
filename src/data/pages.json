@@ -1,0 +1,653 @@
+{
+  "message": {
+    "heading": "理事長メッセージ",
+    "title": "理事長メッセージ・医師紹介｜柴垣圭吾（腎臓病・透析）｜柴垣医院",
+    "description": "柴垣医院 理事長 柴垣圭吾のメッセージ。保存期から透析、在宅医療まで、その人にあった医療を提供する腎臓のクリニックとして、地域とともに歩みます。",
+    "tel": [
+      "jiyugaoka",
+      "togoshi",
+      "kugahara",
+      "zaitaku"
+    ],
+    "next": [
+      [
+        "5つの医療",
+        "/five-medical-services/"
+      ],
+      [
+        "在宅診療",
+        "/home-medical-care/"
+      ],
+      [
+        "自由が丘",
+        "/jiyugaoka-clinic/"
+      ]
+    ]
+  },
+  "jiyugaoka-clinic": {
+    "heading": "自由が丘",
+    "title": "目黒区（自由が丘）の人工透析・夜間透析・オンラインHDF｜柴垣医院 自由が丘｜自由が丘駅北口徒歩1分・世田谷区からも",
+    "description": "目黒区自由が丘の人工透析クリニック。自由が丘駅北口から徒歩1分、月〜土曜と祝日に3クール（8:00〜22:30）。夜間透析・オンラインHDF・腹膜透析外来。東急大井町線で世田谷区からも乗り換えなし。診療時間・アクセス・院内の設備をご案内します。",
+    "tel": [
+      "jiyugaoka"
+    ],
+    "toc": [
+      [
+        "診療時間",
+        "#hours"
+      ],
+      [
+        "アクセス",
+        "#access"
+      ],
+      [
+        "院長紹介",
+        "#director-message"
+      ],
+      [
+        "施設案内",
+        "#facility"
+      ],
+      [
+        "施設基準・院内掲示",
+        "#standards"
+      ]
+    ],
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "@id": "{BASE}/jiyugaoka-clinic/#clinic",
+      "name": "柴垣医院 自由が丘",
+      "url": "{BASE}/jiyugaoka-clinic/",
+      "telephone": "+81-3-3724-0066",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "東京都",
+        "addressLocality": "目黒区",
+        "streetAddress": "自由が丘1-13-4 シャイン自由が丘ビル2F",
+        "postalCode": "152-0035",
+        "addressCountry": "JP"
+      },
+      "parentOrganization": {
+        "@type": "MedicalOrganization",
+        "name": "医療法人社団明洋会 柴垣医院",
+        "@id": "{BASE}/#org"
+      },
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "血液透析（HD）"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "夜間透析"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "オンラインHDF"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "腹膜透析（PD）外来"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "目黒区"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "世田谷区"
+        }
+      ]
+    }
+  },
+  "togoshi-clinic": {
+    "heading": "戸越",
+    "title": "品川区（戸越・戸越銀座）の人工透析・夜間透析・臨時透析｜柴垣医院 戸越｜戸越駅A3出口すぐ",
+    "description": "品川区戸越の人工透析クリニック。都営浅草線「戸越駅」A3出口すぐ、東急池上線「戸越銀座駅」徒歩3分。月〜土曜と祝日に3クール（8:00〜21:45）。夜間透析、旅行・出張時の臨時透析に対応。診療時間・アクセス・院内の設備をご案内します。",
+    "tel": [
+      "togoshi"
+    ],
+    "toc": [
+      [
+        "診療時間",
+        "#hours"
+      ],
+      [
+        "アクセス",
+        "#access"
+      ],
+      [
+        "院長紹介",
+        "#director-message"
+      ],
+      [
+        "施設案内",
+        "#facility"
+      ],
+      [
+        "施設基準・院内掲示",
+        "#standards"
+      ]
+    ],
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "@id": "{BASE}/togoshi-clinic/#clinic",
+      "name": "柴垣医院 戸越",
+      "url": "{BASE}/togoshi-clinic/",
+      "telephone": "+81-3-3787-0610",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "東京都",
+        "addressLocality": "品川区",
+        "streetAddress": "平塚1-7-6 2F",
+        "postalCode": "142-0051",
+        "addressCountry": "JP"
+      },
+      "parentOrganization": {
+        "@type": "MedicalOrganization",
+        "name": "医療法人社団明洋会 柴垣医院",
+        "@id": "{BASE}/#org"
+      },
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "血液透析（HD）"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "夜間透析"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "臨時透析（旅行・出張）"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "品川区"
+        }
+      ]
+    }
+  },
+  "kugahara-clinic": {
+    "heading": "久が原",
+    "title": "大田区（久が原）の人工透析・オンラインHDF・送迎｜柴垣医院 久が原｜久が原駅徒歩5分",
+    "description": "大田区西嶺町の人工透析クリニック。東急池上線「久が原駅」徒歩5分。月〜土曜と祝日に2クール、オンラインHDFに対応。移動に不自由のある方には送迎あり。診療時間・アクセス・院内の設備をご案内します。",
+    "tel": [
+      "kugahara"
+    ],
+    "toc": [
+      [
+        "診療時間",
+        "#hours"
+      ],
+      [
+        "アクセス",
+        "#access"
+      ],
+      [
+        "院長紹介",
+        "#director-message"
+      ],
+      [
+        "施設案内",
+        "#facility"
+      ],
+      [
+        "施設基準・院内掲示",
+        "#standards"
+      ]
+    ],
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "@id": "{BASE}/kugahara-clinic/#clinic",
+      "name": "柴垣医院 久が原",
+      "url": "{BASE}/kugahara-clinic/",
+      "telephone": "+81-3-5732-2121",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "東京都",
+        "addressLocality": "大田区",
+        "streetAddress": "西嶺町15-10 ガーデンビル1F・2F",
+        "postalCode": "145-0075",
+        "addressCountry": "JP"
+      },
+      "parentOrganization": {
+        "@type": "MedicalOrganization",
+        "name": "医療法人社団明洋会 柴垣医院",
+        "@id": "{BASE}/#org"
+      },
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "血液透析（HD）"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "オンラインHDF"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "大田区"
+        }
+      ]
+    }
+  },
+  "home-medical-care": {
+    "heading": "在宅診療",
+    "title": "目黒区の訪問診療・在宅医療｜柴垣医院 在宅診療部（自由が丘）｜品川区・世田谷区・大田区ほか",
+    "description": "目黒区自由が丘の柴垣医院 在宅診療部は、通院が難しい方のご自宅や施設へ医師が定期的に伺う訪問診療（在宅医療）を行っています。目黒区は区内全域が訪問エリア。品川区・世田谷区・渋谷区・港区・新宿区・大田区と川崎市にも伺います。腎臓病（CKD）・透析の方もご相談ください。",
+    "tel": [
+      "zaitaku"
+    ],
+    "next": [
+      [
+        "地域の事業者・医療機関の皆さまへ",
+        "/community-partners/"
+      ],
+      [
+        "よくあるご質問（訪問診療）",
+        "/faq/"
+      ],
+      [
+        "腹膜透析（PD）",
+        "/peritoneal-dialysis/"
+      ]
+    ],
+    "toc": [
+      [
+        "目黒区の方へ",
+        "#meguro"
+      ],
+      [
+        "このような方はご相談ください",
+        "#consult"
+      ],
+      [
+        "訪問エリア",
+        "#area"
+      ],
+      [
+        "訪問診療を始めるまで",
+        "#flow"
+      ],
+      [
+        "できること",
+        "#services"
+      ],
+      [
+        "アクセス",
+        "#access"
+      ]
+    ]
+  },
+  "dialysis-basics": {
+    "heading": "透析医療の基礎知識",
+    "title": "透析の基礎知識｜慢性腎臓病（CKD）・血液透析と腹膜透析の違い｜柴垣医院",
+    "description": "腎臓の働き、慢性腎臓病（CKD）と腎不全、腎代替療法（血液透析・腹膜透析・腎移植）について基礎から順に説明します。健診でクレアチニンや eGFR を指摘された方、透析を始める時期や方法を考えている方へ。",
+    "tel": [
+      "jiyugaoka",
+      "togoshi",
+      "kugahara"
+    ],
+    "next": [
+      [
+        "血液透析",
+        "/hemodialysis/"
+      ],
+      [
+        "腹膜透析（PD）",
+        "/peritoneal-dialysis/"
+      ],
+      [
+        "数字で見る透析医療の現状",
+        "/dialysis-care/"
+      ],
+      [
+        "腎臓病（CKD）のご相談・受診のご案内",
+        "/ckd-consultation/"
+      ]
+    ]
+  },
+  "hemodialysis": {
+    "heading": "血液透析",
+    "title": "血液透析（オンラインHDF・夜間透析・無酢酸透析）｜柴垣医院",
+    "description": "柴垣医院の血液透析のご案内です。透析液の水質管理、無酢酸透析、オンラインHDFで身体への負担に配慮し、仕事を続ける方の夜間透析（自由が丘・戸越）、通院が難しい方の送迎（久が原）にも対応しています。",
+    "tel": [
+      "jiyugaoka",
+      "togoshi",
+      "kugahara"
+    ],
+    "next": [
+      [
+        "人工透析をお探しの方へ（3院の比較）",
+        "/dialysis-clinics/"
+      ],
+      [
+        "透析医療の基礎知識",
+        "/dialysis-basics/"
+      ],
+      [
+        "腹膜透析（PD）",
+        "/peritoneal-dialysis/"
+      ],
+      [
+        "各院の診療時間・アクセス（自由が丘）",
+        "/jiyugaoka-clinic/"
+      ],
+      [
+        "よくあるご質問",
+        "/faq/"
+      ]
+    ]
+  },
+  "peritoneal-dialysis": {
+    "heading": "腹膜透析",
+    "title": "腹膜透析（PD）とは｜自宅で行う透析・CAPDとAPD・PD＋HD併用・緩和的PD｜柴垣医院 自由が丘（目黒区）",
+    "description": "腹膜透析（PD）は自宅を中心に行う透析です。CAPD と APD の違い、血液透析と組み合わせる PD＋HD 併用、緩和的PD、注意点、通院が難しくなったときの訪問診療との連携まで、自由が丘（目黒区）で腹膜透析外来を行う柴垣医院が説明します。",
+    "tel": [
+      "jiyugaoka",
+      "zaitaku"
+    ],
+    "next": [
+      [
+        "透析医療の基礎知識",
+        "/dialysis-basics/"
+      ],
+      [
+        "在宅診療（訪問診療）",
+        "/home-medical-care/"
+      ],
+      [
+        "自由が丘の診療時間・アクセス",
+        "/jiyugaoka-clinic/"
+      ],
+      [
+        "よくあるご質問",
+        "/faq/"
+      ]
+    ],
+    "jsonld": {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "腹膜透析（PD）",
+      "about": {
+        "@type": "MedicalTherapy",
+        "name": "腹膜透析（PD）",
+        "alternateName": "Peritoneal Dialysis"
+      },
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "柴垣医院 自由が丘",
+        "telephone": "+81-3-3724-0066",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "東京都",
+          "addressLocality": "目黒区",
+          "streetAddress": "自由が丘1-13-4 シャイン自由が丘ビル2F",
+          "postalCode": "152-0035",
+          "addressCountry": "JP"
+        }
+      }
+    }
+  },
+  "dialysis-care": {
+    "heading": "数字で見る透析医療の現状",
+    "title": "数字で見る透析医療の現状（患者数・高齢化・腹膜透析の割合）｜柴垣医院",
+    "description": "日本透析医学会の統計（2024年末）をもとに、透析患者数の推移、平均年齢と75歳以上の割合、慢性腎臓病（CKD）の患者数、腹膜透析の割合を図で示します。透析医療を取り巻く現状を知りたい方へ、柴垣医院がまとめました。",
+    "tel": [
+      "jiyugaoka",
+      "togoshi",
+      "kugahara"
+    ],
+    "next": [
+      [
+        "透析医療の基礎知識",
+        "/dialysis-basics/"
+      ],
+      [
+        "血液透析",
+        "/hemodialysis/"
+      ],
+      [
+        "腹膜透析（PD）",
+        "/peritoneal-dialysis/"
+      ]
+    ]
+  },
+  "community-partners": {
+    "heading": "地域の事業者・医療機関の皆さまへ",
+    "title": "ケアマネジャー・訪問看護の方へ｜腎臓病・透析の勉強会と個別相談｜柴垣医院",
+    "description": "柴垣医院は、ケアマネジャー・訪問看護師など地域の医療・介護に携わる方を対象に、腎臓病・透析（血液透析・腹膜透析）の勉強会と、担当している患者さんについての個別相談を行っています。事業所単位の開催もご相談ください。",
+    "tel": [
+      "zaitaku"
+    ],
+    "next": [
+      [
+        "在宅診療",
+        "/home-medical-care/"
+      ],
+      [
+        "勉強会のお申し込み",
+        "/community-seminar-application/"
+      ],
+      [
+        "患者さんについてのご相談",
+        "/community-patient-consultation/"
+      ]
+    ]
+  },
+  "faq": {
+    "heading": "よくあるご質問",
+    "title": "よくあるご質問（透析・腹膜透析・訪問診療・臨時透析）｜柴垣医院",
+    "description": "夜間透析や送迎の有無、旅行・出張時の臨時透析、見学、腹膜透析の始め方、訪問診療の頻度・費用・申し込み方法、腎臓病の検査値の見方など、柴垣医院（自由が丘・戸越・久が原・在宅診療部）によくいただくご質問にお答えします。",
+    "tel": [
+      "zaitaku",
+      "jiyugaoka",
+      "togoshi",
+      "kugahara"
+    ],
+    "next": [
+      [
+        "在宅診療",
+        "/home-medical-care/"
+      ],
+      [
+        "血液透析",
+        "/hemodialysis/"
+      ],
+      [
+        "腹膜透析（PD）",
+        "/peritoneal-dialysis/"
+      ],
+      [
+        "腎臓病（CKD）のご相談",
+        "/ckd-consultation/"
+      ]
+    ]
+  },
+  "recruit": {
+    "heading": "採用情報",
+    "title": "看護師・准看護師・臨床工学技士の採用（透析／自由が丘・戸越・久が原）｜柴垣医院",
+    "description": "柴垣医院（自由が丘・戸越・久が原）の採用情報。透析の看護師・准看護師、臨床工学技士を募集しています。透析未経験の方も歓迎。見学・ご相談と応募はフォームから。",
+    "tel": [
+      "jiyugaoka"
+    ],
+    "tel_lead": "採用についてのお電話はこちらへ。受付で「採用の件で」とお伝えください（採用担当におつなぎします）。",
+    "tel_note": "担当者が不在のときは折り返しご連絡します。受付時間は各院の診療時間内です。"
+  },
+  "five-medical-services": {
+    "heading": "5つの医療",
+    "title": "柴垣医院が大切にしている5つのこと｜柴垣医院",
+    "description": "柴垣医院が診療で大切にしている5つのこと――選択できる、暮らし続ける、最期まで自分らしく、地域で支える、人に寄り添う。保存期から透析、在宅医療まで、自由が丘・戸越・久が原と在宅診療部で共有している考え方です。",
+    "tel": [
+      "jiyugaoka",
+      "togoshi",
+      "kugahara",
+      "zaitaku"
+    ],
+    "next": [
+      [
+        "理事長メッセージ",
+        "/message/"
+      ],
+      [
+        "在宅診療",
+        "/home-medical-care/"
+      ],
+      [
+        "採用情報",
+        "/recruit/"
+      ]
+    ]
+  },
+  "contact": {
+    "heading": "お問い合わせ",
+    "form": "contact",
+    "title": "お問い合わせ（各院・在宅診療部の電話番号とフォーム）｜柴垣医院",
+    "description": "柴垣医院（自由が丘・戸越・久が原・在宅診療部）へのお問い合わせ。各院と在宅診療部の電話番号と、お問い合わせフォームをご案内します。ご予約・緊急のご連絡はお電話でお願いします。"
+  },
+  "privacy-policy": {
+    "heading": "個人情報の取り扱いについて",
+    "title": "個人情報の取り扱いについて｜柴垣医院",
+    "description": "柴垣医院（医療法人社団明洋会）の個人情報の取り扱いについて。利用目的、フォーム・採用応募でいただく情報の扱い、外部サービス（Google フォント・Google マップ・Netlify）への送信、開示・訂正の窓口をご説明します。"
+  },
+  "recruit-application": {
+    "heading": "採用のご応募",
+    "form": "recruit-application",
+    "title": "採用のご応募（応募フォーム）｜柴垣医院",
+    "description": " ",
+    "noindex": true
+  },
+  "recruit-visit-consultation": {
+    "heading": "見学・ご相談",
+    "form": "recruit-visit-consultation",
+    "title": "見学・ご相談（採用）｜柴垣医院",
+    "description": " ",
+    "noindex": true
+  },
+  "community-seminar-application": {
+    "heading": "勉強会のお申し込み",
+    "form": "community-seminar-application",
+    "title": "勉強会のお申し込み（地域の事業者・医療機関の方）｜柴垣医院",
+    "description": " ",
+    "noindex": true,
+    "tel": [
+      "zaitaku"
+    ]
+  },
+  "community-patient-consultation": {
+    "heading": "患者さんについてのご相談",
+    "form": "community-patient-consultation",
+    "title": "患者さんについてのご相談（地域の事業者・医療機関の方）｜柴垣医院",
+    "description": " ",
+    "noindex": true,
+    "tel": [
+      "zaitaku"
+    ]
+  },
+  "index": {
+    "heading": "",
+    "title": "柴垣医院｜腎臓病（CKD）・人工透析・訪問診療｜自由が丘・戸越・久が原",
+    "description": "柴垣医院は、目黒区自由が丘・品川区戸越・大田区久が原に3院を置く腎臓病・透析のクリニックです。血液透析（オンラインHDF・夜間透析）、腹膜透析、在宅診療部による訪問診療まで、暮らしに合わせた治療を一緒に考えます。1975年開設。",
+    "tel": [
+      "jiyugaoka",
+      "togoshi",
+      "kugahara",
+      "zaitaku"
+    ]
+  },
+  "thanks": {
+    "heading": "送信を受け付けました",
+    "title": "送信を受け付けました｜柴垣医院",
+    "description": "送信を受け付けました｜柴垣医院（自由が丘・戸越・久が原・在宅診療部）",
+    "noindex": true
+  },
+  "ckd-consultation": {
+    "heading": "腎臓病（CKD）のご相談",
+    "title": "腎臓病（CKD）のご相談・受診のご案内｜健診で腎機能の低下を指摘された方へ｜柴垣医院 自由が丘",
+    "description": "健診で腎機能の低下・eGFR の低下・尿たんぱくを指摘された方、慢性腎臓病（CKD）と言われた方のご相談を柴垣医院 自由が丘（目黒区）でお受けします。受診の窓口とお持ちいただくものをご案内します。",
+    "tel": [
+      "jiyugaoka"
+    ],
+    "next": [
+      [
+        "透析医療の基礎知識",
+        "/dialysis-basics/"
+      ],
+      [
+        "血液透析",
+        "/hemodialysis/"
+      ],
+      [
+        "腹膜透析（PD）",
+        "/peritoneal-dialysis/"
+      ],
+      [
+        "自由が丘の診療時間・アクセス",
+        "/jiyugaoka-clinic/"
+      ]
+    ]
+  },
+  "home-medical-care-meguro": {
+    "heading": "目黒区の訪問診療",
+    "title": "目黒区の訪問診療・在宅医療｜自由が丘の在宅診療部が区内全域に伺います｜柴垣医院",
+    "description": "目黒区で訪問診療（在宅医療）をお探しの方へ。目黒区自由が丘の柴垣医院 在宅診療部が、通院が難しい方のご自宅や施設へ医師が定期的に伺います。腎臓病（CKD）・透析の方の在宅療養にも対応。区内の主な地域、対象となる方、ご相談の方法をご案内します。",
+    "tel": [
+      "zaitaku"
+    ],
+    "next": [
+      [
+        "在宅診療（訪問診療）のご案内",
+        "/home-medical-care/"
+      ],
+      [
+        "地域の事業者・医療機関の皆さまへ",
+        "/community-partners/"
+      ],
+      [
+        "よくあるご質問（訪問診療）",
+        "/faq/"
+      ]
+    ],
+    "crumbs_html": "<a href=\"/home-medical-care/\">在宅診療</a> &gt; 目黒区の訪問診療",
+    "out": "home-medical-care/meguro/index.html",
+    "url": "/home-medical-care/meguro/"
+  },
+  "dialysis-clinics": {
+    "heading": "人工透析をお探しの方へ（3院の比較）",
+    "title": "目黒区・品川区・大田区・世田谷区の人工透析クリニック｜柴垣医院 3院の比較（夜間透析・オンラインHDF・送迎・臨時透析）",
+    "description": "目黒区自由が丘・品川区戸越・大田区久が原の3院で人工透析（血液透析）を行う柴垣医院。夜間透析・オンラインHDF・送迎・臨時透析・腹膜透析外来の対応を院ごとに比較し、世田谷区からの通院もご案内します。転院・見学のご相談は各院へ。",
+    "tel": [
+      "jiyugaoka",
+      "togoshi",
+      "kugahara"
+    ],
+    "next": [
+      [
+        "血液透析について",
+        "/hemodialysis/"
+      ],
+      [
+        "腹膜透析（PD）",
+        "/peritoneal-dialysis/"
+      ],
+      [
+        "よくあるご質問（透析）",
+        "/faq/"
+      ],
+      [
+        "在宅診療（訪問診療）",
+        "/home-medical-care/"
+      ]
+    ]
+  }
+}

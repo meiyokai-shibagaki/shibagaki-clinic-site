@@ -1,0 +1,52 @@
+# Decap CMS（旧 Netlify CMS）設定：お知らせと採用（募集要項）を院内で編集するための画面
+# 公開時は Netlify の Identity と Git Gateway を有効にする（README 参照）。
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    update: "お知らせ・採用情報を更新（{{author-name}}）"
+local_backend: false  # ローカルで試すときだけ true（npx decap-server）
+locale: ja
+site_url: https://shibagaki-clinic-test.netlify.app
+display_url: https://shibagaki-clinic-test.netlify.app
+media_folder: "site/assets/img/uploads"
+public_folder: "/assets/img/uploads"
+collections:
+  - name: "contents"
+    label: "サイトの内容"
+    files:
+      - name: "news"
+        label: "お知らせ"
+        file: "src/data/news.json"
+        format: json
+        fields:
+          - label: "お知らせ一覧"
+            name: "items"
+            widget: list
+            summary: "{{fields.date}}　{{fields.title}}"
+            fields:
+              - { label: "タイトル", name: "title", widget: string }
+              - { label: "URL 用の名前（半角英数とハイフン）", name: "slug", widget: string, pattern: ["^[a-z0-9-]+$", "半角小文字・数字・ハイフンのみ"] }
+              - { label: "日付", name: "date", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "分類", name: "category", widget: select, options: ["お知らせ", "勉強会・セミナー", "活動報告", "休診・診療時間"], default: "お知らせ" }
+              - { label: "本文", name: "body", widget: markdown }
+              - { label: "下書き（公開しない）", name: "draft", widget: boolean, default: false, required: false }
+      - name: "recruit"
+        label: "採用（募集要項）"
+        file: "src/data/recruit.json"
+        format: json
+        fields:
+          - label: "募集職種"
+            name: "positions"
+            widget: list
+            summary: "{{fields.title}}（{{fields.status}}）"
+            fields:
+              - { label: "職種名", name: "title", widget: string }
+              - { label: "状態", name: "status", widget: select, options: ["募集中", "募集終了"], default: "募集中" }
+              - label: "募集要項（項目名と内容）"
+                name: "fields"
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "項目名", name: "label", widget: string }
+                  - { label: "内容", name: "value", widget: text }

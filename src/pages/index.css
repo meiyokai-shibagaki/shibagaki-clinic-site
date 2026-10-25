@@ -1,0 +1,1140 @@
+.total-renal-care,
+.total-renal-care * {
+  box-sizing: border-box;
+}
+
+.total-renal-care {
+  --trc-text: #424242;
+  --trc-heading: #4b3d35;
+  --trc-accent: #6f8a8c;
+  --trc-line: #b5cfd2;
+  color: var(--trc-text);
+  text-align: center;
+}
+
+#main article .total-renal-care .total-renal-care__separator {
+  display: block;
+  width: min(516px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+#main article .total-renal-care .total-renal-care__eyebrow {
+  margin: 18px 0 0;
+  color: var(--trc-accent);
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+#main article .total-renal-care .total-renal-care__heading {
+  margin: 4px 0 18px;
+  color: var(--trc-heading);
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.25;
+}
+
+#main article .total-renal-care .total-renal-care__intro {
+  margin: 0;
+  line-height: 1.9;
+}
+
+#main article .total-renal-care .total-renal-care__features {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 36px 0;
+}
+
+#main article .total-renal-care .total-renal-care__feature {
+  position: relative;
+  min-width: 0;
+}
+
+/* PCでは円の中心同士を点線でつなぐ。 */
+#main article .total-renal-care .total-renal-care__feature:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 89px;
+  left: 50%;
+  width: 100%;
+  border-top: 2px dashed var(--trc-line);
+  pointer-events: none;
+}
+
+#main article .total-renal-care .total-renal-care__icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border: 2px solid var(--trc-line);
+  border-radius: 50%;
+  background: #fff;
+}
+
+#main article .total-renal-care .total-renal-care__icon img {
+  display: block;
+  width: 80px !important;
+  max-width: none;
+  height: 80px !important;
+  object-fit: contain;
+}
+
+#main article .total-renal-care .total-renal-care__title {
+  margin: 15px 0 5px;
+  color: var(--trc-accent);
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+#main article .total-renal-care p.total-renal-care__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#main article .total-renal-care p.total-renal-care__closing {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1em 2em;
+  border: 1px solid var(--trc-accent);
+  border-radius: 5px;
+  color: var(--trc-heading);
+  line-height: 1.9;
+}
+
+@media (max-width: 768px) {
+  #main article .total-renal-care .total-renal-care__eyebrow {
+    margin-top: 12px;
+    font-size: 21px;
+  }
+
+  #main article .total-renal-care .total-renal-care__heading {
+    margin-top: 2px;
+    font-size: 32px;
+  }
+
+  #main article .total-renal-care .total-renal-care__intro br {
+    display: none;
+  }
+
+  #main article .total-renal-care .total-renal-care__features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 12px;
+    row-gap: 28px;
+    margin: 30px 0 36px;
+  }
+
+  /* 2×2表示では接続線が文字や隣の項目を横切るため非表示にする。 */
+  #main article .total-renal-care .total-renal-care__feature:not(:last-child)::after {
+    display: none;
+  }
+
+  #main article .total-renal-care .total-renal-care__icon {
+    width: 132px;
+    height: 132px;
+  }
+
+  #main article .total-renal-care .total-renal-care__icon img {
+    width: 62px !important;
+    height: 62px !important;
+  }
+
+  #main article .total-renal-care .total-renal-care__title {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  #main article .total-renal-care p.total-renal-care__description {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  #main article .total-renal-care p.total-renal-care__closing {
+    width: 100%;
+    padding: 1em 1.2em;
+  }
+}
+
+.care-manager,
+.care-manager * {
+  box-sizing: border-box;
+}
+
+#main article .care-manager {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(20, 30, 40, 0.08);
+  color: #424242;
+}
+
+#main article .care-manager .care-manager__image {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  min-height: 340px;
+  margin: 0;
+}
+
+#main article .care-manager .care-manager__image img {
+  display: block;
+  width: 100% !important;
+  max-width: none;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+#main article .care-manager .care-manager__body {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(44px, 5vw, 72px) clamp(36px, 5vw, 64px);
+}
+
+#main article .care-manager .care-manager__heading {
+  margin: 0 0 28px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #424242;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+#main article .care-manager p.care-manager__description {
+  margin: 0 0 14px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+#main article .care-manager p.care-manager__description:last-of-type {
+  margin-bottom: 32px;
+}
+
+#main article .care-manager .care-manager__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  min-width: 198px;
+  min-height: 44px;
+  padding: 8px 32px;
+  border: 1px solid #6f8a8c;
+  border-radius: 4px;
+  color: #526c6e;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#main article .care-manager .care-manager__button:hover,
+#main article .care-manager .care-manager__button:focus {
+  background: #6f8a8c;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #main article .care-manager {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  #main article .care-manager .care-manager__image {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 0;
+  }
+
+  #main article .care-manager .care-manager__image img {
+    height: auto !important;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  #main article .care-manager .care-manager__body {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 28px 24px 32px;
+  }
+
+  #main article .care-manager .care-manager__heading {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  #main article .care-manager .care-manager__heading-break {
+    display: none;
+  }
+
+  #main article .care-manager p.care-manager__description {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+
+  #main article .care-manager p.care-manager__description:last-of-type {
+    margin-bottom: 24px;
+  }
+
+  #main article .care-manager .care-manager__button {
+    align-self: stretch;
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 20px;
+  }
+}
+
+.four-locations,
+.four-locations * {
+  box-sizing: border-box;
+}
+
+#main article .four-locations {
+  color: #424242;
+}
+
+#main article .four-locations .four-locations__heading {
+  margin-bottom: 28px;
+}
+
+#main article .four-locations p.four-locations__intro {
+  margin: 0 0 28px;
+  line-height: 1.8;
+}
+
+#main article .four-locations .four-locations__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+#main article .four-locations .four-locations__card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 46%) minmax(0, 1fr);
+  min-width: 0;
+  min-height: 230px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(20, 30, 40, 0.08);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#main article .four-locations .four-locations__card:hover,
+#main article .four-locations .four-locations__card:focus-within {
+  background: #eef3f3;
+  box-shadow: 0 8px 24px rgba(20, 30, 40, 0.14);
+}
+
+#main article .four-locations .four-locations__image {
+  min-width: 0;
+  min-height: 230px;
+  margin: 0;
+}
+
+#main article .four-locations .four-locations__card-link {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: inherit;
+}
+
+#main article .four-locations .four-locations__image img {
+  display: block;
+  width: 100% !important;
+  max-width: none;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+#main article .four-locations .four-locations__image--contain {
+  background: #f6f2e9;
+}
+
+#main article .four-locations .four-locations__image--contain img {
+  object-fit: contain;
+}
+
+#main article .four-locations .four-locations__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 28px 24px 22px;
+}
+
+#main article .four-locations .four-locations__title {
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #526c6e;
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+#main article .four-locations p.four-locations__description {
+  margin: 0;
+  line-height: 1.8;
+}
+
+#main article .four-locations .four-locations__action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+#main article .four-locations .four-locations__link-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 0 8px 16px;
+  color: #526c6e;
+  line-height: 1.5;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  #main article .four-locations .four-locations__heading {
+    margin-bottom: 20px;
+  }
+
+  #main article .four-locations p.four-locations__intro {
+    margin-bottom: 24px;
+  }
+
+  #main article .four-locations .four-locations__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #main article .four-locations .four-locations__card {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  #main article .four-locations .four-locations__image {
+    min-height: 0;
+    aspect-ratio: 3 / 2;
+  }
+
+  #main article .four-locations .four-locations__body {
+    min-height: 190px;
+    padding: 22px 24px 18px;
+  }
+
+  #main article .four-locations .four-locations__title {
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+
+  #main article .four-locations .four-locations__description br {
+    display: none;
+  }
+
+  #main article .four-locations .four-locations__action {
+    padding-top: 14px;
+  }
+
+}
+
+.five-medical-services,
+.five-medical-services * {
+  box-sizing: border-box;
+}
+
+#main article .five-medical-services {
+  --five-bg: #fff;
+  --five-border: #e6e3dd;
+  --five-icon-bg: #fbf5f0;
+  --five-accent: #6f8a8c;
+  --five-text: #424242;
+  --five-muted: #6b6b6b;
+  color: var(--five-text);
+}
+
+#main article .five-medical-services .five-medical-services__heading {
+  margin-bottom: 28px;
+}
+
+#main article .five-medical-services p.five-medical-services__intro {
+  margin: 0 0 28px;
+  line-height: 1.8;
+}
+
+#main article .five-medical-services .five-medical-services__panel {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 40px 20px;
+  border: 1px solid var(--five-border);
+  border-radius: 20px;
+  background: var(--five-bg);
+}
+
+#main article .five-medical-services .five-medical-services__feature {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 0 18px;
+  text-align: center;
+}
+
+#main article .five-medical-services .five-medical-services__feature + .five-medical-services__feature {
+  border-left: 1px solid #e2ded6;
+}
+
+#main article .five-medical-services .five-medical-services__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin: 0 0 22px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--five-icon-bg);
+}
+
+#main article .five-medical-services .five-medical-services__icon img {
+  display: block;
+  width: 52px !important;
+  max-width: none;
+  height: 52px !important;
+  object-fit: contain;
+}
+
+#main article .five-medical-services .five-medical-services__title {
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--five-accent);
+  font-size: 17px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+}
+
+#main article .five-medical-services p.five-medical-services__description {
+  margin: 0;
+  color: var(--five-muted);
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+#main article .five-medical-services .five-medical-services__action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+#main article .five-medical-services .five-medical-services__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 44px;
+  padding: 8px 0 8px 16px;
+  color: var(--five-accent);
+  line-height: 1.5;
+  text-align: right;
+  text-decoration: none;
+}
+
+#main article .five-medical-services .five-medical-services__link:hover,
+#main article .five-medical-services .five-medical-services__link:focus {
+  color: #4f6f72;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #main article .five-medical-services .five-medical-services__heading {
+    margin-bottom: 20px;
+  }
+
+  #main article .five-medical-services p.five-medical-services__intro {
+    margin-bottom: 22px;
+  }
+
+  #main article .five-medical-services .five-medical-services__panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 0;
+    padding: 28px 16px;
+    border-radius: 14px;
+  }
+
+  #main article .five-medical-services .five-medical-services__feature {
+    padding: 0 10px;
+  }
+
+  #main article .five-medical-services .five-medical-services__feature + .five-medical-services__feature {
+    border-left: 0;
+  }
+
+  #main article .five-medical-services .five-medical-services__feature:nth-child(odd):not(:last-child) {
+    border-right: 1px solid #e2ded6;
+  }
+
+  #main article .five-medical-services .five-medical-services__feature:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 8px);
+  }
+
+  #main article .five-medical-services .five-medical-services__icon {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 14px;
+  }
+
+  #main article .five-medical-services .five-medical-services__icon img {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  #main article .five-medical-services .five-medical-services__title {
+    margin-bottom: 6px;
+    font-size: 15px;
+  }
+
+  #main article .five-medical-services p.five-medical-services__description {
+    font-size: 12.5px;
+    line-height: 1.7;
+  }
+
+  #main article .five-medical-services .five-medical-services__description br {
+    display: none;
+  }
+
+  #main article .five-medical-services .five-medical-services__action {
+    margin-top: 18px;
+  }
+}
+
+.director-message-top,
+.director-message-top * {
+  box-sizing: border-box;
+}
+
+#main article .director-message-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(20, 30, 40, 0.08);
+  color: #424242;
+}
+
+#main article .director-message-top .director-message-top__image {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  min-height: 380px;
+  margin: 0;
+}
+
+#main article .director-message-top .director-message-top__image img {
+  display: block;
+  width: 100% !important;
+  max-width: none;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center top;
+}
+
+#main article .director-message-top .director-message-top__body {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(44px, 5vw, 72px) clamp(36px, 5vw, 64px);
+}
+
+#main article .director-message-top .director-message-top__heading {
+  margin: 0 0 26px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #424242;
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+#main article .director-message-top p.director-message-top__lead {
+  margin: 0 0 20px;
+  font-size: clamp(23px, 2.4vw, 28px);
+  line-height: 1.7;
+}
+
+#main article .director-message-top p.director-message-top__name {
+  margin: 0 0 28px;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0.18em;
+}
+
+#main article .director-message-top .director-message-top__role {
+  margin-right: 1em;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+#main article .director-message-top .director-message-top__action {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#main article .director-message-top .director-message-top__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 198px;
+  min-height: 44px;
+  padding: 8px 32px;
+  border: 1px solid #6f8a8c;
+  border-radius: 4px;
+  color: #526c6e;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+
+#main article .director-message-top .director-message-top__link:hover,
+#main article .director-message-top .director-message-top__link:focus {
+  background: #6f8a8c;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #main article .director-message-top {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  #main article .director-message-top .director-message-top__image {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 0;
+    aspect-ratio: 526 / 476;
+  }
+
+  #main article .director-message-top .director-message-top__body {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 28px 24px 24px;
+  }
+
+  #main article .director-message-top .director-message-top__heading {
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+
+  #main article .director-message-top p.director-message-top__lead {
+    margin-bottom: 16px;
+    font-size: 21px;
+  }
+
+  #main article .director-message-top .director-message-top__lead br {
+    display: none;
+  }
+
+  #main article .director-message-top p.director-message-top__name {
+    margin-bottom: 18px;
+    font-size: 21px;
+  }
+
+  #main article .director-message-top .director-message-top__role {
+    font-size: 17px;
+  }
+
+  #main article .director-message-top .director-message-top__link {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 20px;
+  }
+}
+
+.medical-services-top,
+.medical-services-top * {
+  box-sizing: border-box;
+}
+
+#main article .medical-services-top {
+  color: #424242;
+}
+
+#main article .medical-services-top .medical-services-top__heading {
+  margin-bottom: 28px;
+}
+
+#main article .medical-services-top p.medical-services-top__intro {
+  margin: 0 0 28px;
+  line-height: 1.8;
+}
+
+#main article .medical-services-top .medical-services-top__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+#main article .medical-services-top .medical-services-top__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(20, 30, 40, 0.08);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#main article .medical-services-top .medical-services-top__card:hover,
+#main article .medical-services-top .medical-services-top__card:focus-within {
+  background: #eef3f3;
+  box-shadow: 0 8px 24px rgba(20, 30, 40, 0.14);
+}
+
+#main article .medical-services-top .medical-services-top__card-link {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: inherit;
+}
+
+#main article .medical-services-top .medical-services-top__image {
+  aspect-ratio: 16 / 10;
+  margin: 0;
+  overflow: hidden;
+}
+
+#main article .medical-services-top .medical-services-top__card--peritoneal .medical-services-top__image {
+  /* 指定画像（1536×1024）の比率に合わせ、縮小時の不要なトリミングを避ける */
+  aspect-ratio: 3 / 2;
+}
+
+#main article .medical-services-top .medical-services-top__image img {
+  display: block;
+  width: 100% !important;
+  max-width: none;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+#main article .medical-services-top .medical-services-top__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px 24px 18px;
+}
+
+#main article .medical-services-top .medical-services-top__title {
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #526c6e;
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+#main article .medical-services-top p.medical-services-top__description {
+  margin: 0;
+  line-height: 1.8;
+}
+
+#main article .medical-services-top .medical-services-top__action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+#main article .medical-services-top .medical-services-top__link-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 44px;
+  padding: 8px 0 8px 16px;
+  color: #526c6e;
+  line-height: 1.5;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  #main article .medical-services-top .medical-services-top__heading {
+    margin-bottom: 20px;
+  }
+
+  #main article .medical-services-top p.medical-services-top__intro {
+    margin-bottom: 24px;
+  }
+
+  #main article .medical-services-top .medical-services-top__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #main article .medical-services-top .medical-services-top__body {
+    min-height: 170px;
+    padding: 22px 24px 16px;
+  }
+
+  #main article .medical-services-top .medical-services-top__title {
+    font-size: 21px;
+  }
+
+  #main article .medical-services-top .medical-services-top__description br {
+    display: none;
+  }
+}
+
+.dialysis-care-top,
+.dialysis-care-top * {
+  box-sizing: border-box;
+}
+
+#main article .dialysis-care-top {
+  --dialysis-accent: #6f8a8c;
+  --dialysis-text: #424242;
+  --dialysis-border: #dce5e5;
+  color: var(--dialysis-text);
+}
+
+#main article .dialysis-care-top .dialysis-care-top__heading {
+  margin-bottom: 28px;
+}
+
+#main article .dialysis-care-top p.dialysis-care-top__intro {
+  margin: 0 0 28px;
+  line-height: 1.8;
+}
+
+#main article .dialysis-care-top p.dialysis-care-top__source {
+  margin: 24px 0 0;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: right;
+}
+
+#main article .dialysis-care-top .dialysis-care-top__statistics {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+#main article .dialysis-care-top .dialysis-care-top__statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 20px 10px 18px;
+  border: 1px solid var(--dialysis-border);
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+#main article .dialysis-care-top .dialysis-care-top__illustration {
+  width: 112px;
+  height: 112px;
+  margin: 0 0 14px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #fbf5f0;
+}
+
+#main article .dialysis-care-top .dialysis-care-top__illustration img {
+  display: block;
+  width: 100% !important;
+  max-width: none;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+#main article .dialysis-care-top .dialysis-care-top__title {
+  margin: 0 0 8px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--dialysis-text);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+#main article .dialysis-care-top p.dialysis-care-top__value {
+  margin: auto 0 0;
+  color: var(--dialysis-accent);
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+#main article .dialysis-care-top .dialysis-care-top__action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+#main article .dialysis-care-top .dialysis-care-top__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 44px;
+  padding: 8px 0 8px 16px;
+  color: var(--dialysis-accent);
+  line-height: 1.5;
+  text-align: right;
+  text-decoration: none;
+}
+
+#main article .dialysis-care-top .dialysis-care-top__link:hover,
+#main article .dialysis-care-top .dialysis-care-top__link:focus {
+  color: #4f6f72;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #main article .dialysis-care-top .dialysis-care-top__heading {
+    margin-bottom: 20px;
+  }
+
+  #main article .dialysis-care-top p.dialysis-care-top__intro {
+    margin-bottom: 22px;
+  }
+
+  #main article .dialysis-care-top .dialysis-care-top__statistics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  #main article .dialysis-care-top .dialysis-care-top__statistic {
+    padding: 16px 8px 14px;
+  }
+
+  #main article .dialysis-care-top .dialysis-care-top__statistic:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 7px);
+  }
+
+  #main article .dialysis-care-top .dialysis-care-top__illustration {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 10px;
+  }
+
+  #main article .dialysis-care-top .dialysis-care-top__title {
+    margin-bottom: 5px;
+    font-size: 12.5px;
+  }
+
+  #main article .dialysis-care-top p.dialysis-care-top__value {
+    font-size: 18px;
+  }
+
+  #main article .dialysis-care-top .dialysis-care-top__action {
+    margin-top: 18px;
+  }
+}
+
+.recruitment-top,
+.recruitment-top * {
+  box-sizing: border-box;
+}
+
+#main article .recruitment-top {
+  color: #424242;
+}
+
+#main article .recruitment-top .recruitment-top__heading {
+  margin-bottom: 28px;
+}
+
+#main article .recruitment-top .recruitment-top__image {
+  margin: 0 0 24px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#main article .recruitment-top .recruitment-top__image img {
+  display: block;
+  width: 100% !important;
+  max-width: none;
+  height: auto !important;
+}
+
+#main article .recruitment-top p.recruitment-top__description {
+  margin: 0;
+  line-height: 1.9;
+}
+
+#main article .recruitment-top .recruitment-top__action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+#main article .recruitment-top .recruitment-top__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 198px;
+  min-height: 44px;
+  padding: 8px 32px;
+  border: 1px solid #6f8a8c;
+  border-radius: 4px;
+  color: #526c6e;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+}
+
+#main article .recruitment-top .recruitment-top__link:hover,
+#main article .recruitment-top .recruitment-top__link:focus {
+  background: #6f8a8c;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #main article .recruitment-top .recruitment-top__heading {
+    margin-bottom: 20px;
+  }
+
+  #main article .recruitment-top .recruitment-top__image {
+    margin-bottom: 20px;
+  }
+
+  #main article .recruitment-top .recruitment-top__description br {
+    display: none;
+  }
+
+  #main article .recruitment-top .recruitment-top__action {
+    margin-top: 16px;
+  }
+
+  #main article .recruitment-top .recruitment-top__link {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 20px;
+  }
+}

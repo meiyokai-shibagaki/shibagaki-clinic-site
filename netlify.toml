@@ -1,0 +1,30 @@
+# 柴垣医院 テストサイト：Netlify 設定（静的配信・PHP なし）
+# リポジトリ直下がサイトのルート（Base directory の指定は不要）
+[build]
+  command = "python3 build.py"
+  publish = "site"
+
+# 全ページに Basic 認証（netlify/edge-functions/auth.ts）。ID/パスワードは環境変数 SITE_USER / SITE_PASS
+[[edge_functions]]
+  path = "/*"
+  function = "auth"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    X-Robots-Tag = "noindex, nofollow"
+    Cross-Origin-Opener-Policy = "same-origin"
+    X-Permitted-Cross-Domain-Policies = "none"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.googleapis.com https://*.gstatic.com https://*.google.com; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
+
+# 編集画面だけは Decap CMS / Netlify Identity を許可する
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "default-src 'self' https://unpkg.com https://identity.netlify.com https://*.netlify.com https://api.netlify.com 'unsafe-inline' 'unsafe-eval' data: blob:; img-src * data: blob:; connect-src *"

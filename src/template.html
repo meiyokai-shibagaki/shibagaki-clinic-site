@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+{{ROBOTS}}
+<meta property="og:type" content="{{OG_TYPE}}">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="柴垣医院">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary">
+{{JSONLD}}
+{{CANONICAL_TAG}}
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700&family=BIZ+UDPMincho&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/base.css?v={{BUILD}}">
+{{PAGE_CSS}}
+</head>
+<body id="bodyid" class="{{BODY_CLASS}}">
+{{TEST_BANNER}}
+<div id="wrapper" class="{{WRAPPER_CLASS}}">
+  <a class="skip-link" href="#main">本文へ</a>
+  <header id="header">
+    <div class="header__inner">
+      <p class="header__logo"><a href="/"><img class="cliniclogo_img" src="{{LOGO}}" alt="{{LOGO_ALT}}" width="283" height="91"></a></p>
+      <div class="header-contact">
+        <div class="header-clinic-phones" aria-label="各拠点の電話番号">
+{{HEADER_PHONES}}
+        </div>
+        <a class="header-contact__label" href="/contact/">お問い合わせ</a>
+      </div>
+      <button id="mobile" class="mobile_menu" type="button" aria-controls="sidr" aria-expanded="false" aria-label="メニューを開く"><span class="mobile_menu__bars" aria-hidden="true"><i></i><i></i><i></i></span><span class="mobile_menu__text">MENU</span></button>
+    </div>
+  </header>
+  <nav id="gNav" aria-label="グローバルナビゲーション">
+    <ul id="nav" class="menu">
+{{NAV}}
+    </ul>
+  </nav>
+  <div id="sidr" aria-hidden="true">
+    <p class="close"><button type="button" id="sidr-close" aria-label="メニューを閉じる"></button></p>
+    <ul class="mobile-clinic-phones">
+{{MOBILE_PHONES}}
+    </ul>
+    <ul id="menu-main_menu" class="menu">
+{{MOBILE_NAV}}
+    </ul>
+    <p class="mobile-contact-menu-item"><a href="/contact/">お問い合わせ</a></p>
+  </div>
+{{HERO}}
+  <div id="contents">
+    <main id="main">
+{{BREADCRUMBS}}
+      <article>
+{{CONTENT}}
+      </article>
+    </main>
+  </div>
+  <p class="pagetop"><a href="#header" aria-label="ページのトップに戻る">▲</a></p>
+  <footer id="footer">
+    <div class="clinic-footer">
+      <div class="clinic-footer__inner">
+        <div class="clinic-footer__brand">
+          <a class="clinic-footer__logo-link" href="/"><img class="clinic-footer__logo" src="{{LOGO}}" alt="{{LOGO_ALT}}" width="283" height="91" loading="lazy"></a>
+          <dl class="clinic-footer__clinics" aria-label="各拠点の連絡先">
+{{FOOTER_CLINICS}}
+          </dl>
+        </div>
+        <div class="clinic-footer__menus">
+{{FOOTER_MENUS}}
+        </div>
+      </div>
+    </div>
+    <address class="address">{{COPYRIGHT}}</address>
+  </footer>
+</div>
+<script src="/assets/js/site.js?v={{BUILD}}" defer></script>
+</body>
+</html>

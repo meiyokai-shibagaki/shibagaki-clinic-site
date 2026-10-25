@@ -1,0 +1,44 @@
+<div class="contact-guide">
+  <p>ケアマネジャー・訪問看護師など地域の事業者の皆さまを対象に、腎臓病・透析の勉強会を開催しています。開催予定は<a href="/news/">お知らせ</a>と<a href="/community-partners/">地域連携活動</a>のページでご案内します。下記フォームからお申し込みください。</p>
+</div>
+<form class="wv-form" name="community-seminar-application" method="POST" action="/thanks/?form=community-seminar-application" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+  <input type="hidden" name="form-name" value="community-seminar-application">
+  <input type="hidden" name="フォーム" value="勉強会のお申し込み">
+  <p class="wv-form__honeypot" aria-hidden="true"><label>このフィールドは空のままにしてください <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+  <p class="wv-form__error" role="alert"></p>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-seminar">お申し込みの勉強会</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field">
+      <select id="f-seminar" name="お申し込みの勉強会" required>
+        <option value="">選択してください</option>
+        <option>開催予定の勉強会に参加したい（お知らせの日程）</option>
+        <option>自分の事業所で勉強会を開いてほしい</option>
+        <option>テーマや日程をまず相談したい</option>
+      </select>
+      <input type="text" name="日程・ご希望" placeholder="例：○月○日の勉強会、希望テーマ など" style="margin-top:8px">
+    </div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-org">事業所名</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field"><input type="text" id="f-org" name="事業所名" autocomplete="organization" required></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-role">職種</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field">
+      <select id="f-role" name="職種" required>
+        <option value="">選択してください</option>
+        <option>ケアマネジャー</option><option>訪問看護師</option><option>相談員・MSW</option><option>施設職員</option><option>医師</option><option>その他</option>
+      </select>
+    </div>
+  </div>
+{{COMMON_FIELDS}}
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-count">参加人数</label><span class="wv-form__req">必須</span></div>
+    <div class="wv-form__field"><input type="text" id="f-count" name="参加人数" placeholder="例：2名（同行者：○○）" required></div>
+  </div>
+  <div class="wv-form__row">
+    <div class="wv-form__label"><label for="f-body">事前のご質問</label><span class="wv-form__opt">任意</span></div>
+    <div class="wv-form__field"><textarea id="f-body" name="事前のご質問" placeholder="当日取り上げてほしいテーマなどがあればお書きください"></textarea></div>
+  </div>
+{{PURPOSE:common}}{{CONSENT:申し込む|consult}}
+</form>

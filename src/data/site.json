@@ -1,0 +1,188 @@
+{
+  "site_name": "柴垣医院",
+  "base_url": "https://shibagaki-clinic-test.netlify.app",
+  "logo": "/assets/img/logo_with_4branches.png",
+  "logo_alt": "柴垣医院 自由が丘・戸越・久が原・在宅診療部",
+  "clinics": [
+    {
+      "name": "自由が丘",
+      "tel": "03-3724-0066",
+      "zip": "〒152-0035",
+      "address": "東京都目黒区自由が丘1-13-4<br>シャイン自由が丘ビル2F",
+      "url": "/jiyugaoka-clinic/"
+    },
+    {
+      "name": "戸越",
+      "tel": "03-3787-0610",
+      "zip": "〒142-0051",
+      "address": "東京都品川区平塚1-7-6 2F",
+      "url": "/togoshi-clinic/"
+    },
+    {
+      "name": "久が原",
+      "tel": "03-5732-2121",
+      "zip": "〒145-0075",
+      "address": "東京都大田区西嶺町15-10<br>ガーデンビル1F・2F",
+      "url": "/kugahara-clinic/"
+    },
+    {
+      "name": "在宅診療部",
+      "tel": "03-3724-2626",
+      "zip": "〒152-0035",
+      "address": "東京都目黒区自由が丘1-13-4<br>シャイン自由が丘ビル2F",
+      "url": "/home-medical-care/"
+    }
+  ],
+  "nav": [
+    {
+      "label": "理事長メッセージ",
+      "url": "/message/"
+    },
+    {
+      "label": "外来診療",
+      "children": [
+        {
+          "label": "自由が丘",
+          "url": "/jiyugaoka-clinic/"
+        },
+        {
+          "label": "戸越",
+          "url": "/togoshi-clinic/"
+        },
+        {
+          "label": "久が原",
+          "url": "/kugahara-clinic/"
+        }
+      ]
+    },
+    {
+      "label": "在宅診療",
+      "url": "/home-medical-care/"
+    },
+    {
+      "label": "透析について",
+      "children": [
+        {
+          "label": "透析医療の基礎知識",
+          "url": "/dialysis-basics/"
+        },
+        {
+          "label": "血液透析",
+          "url": "/hemodialysis/"
+        },
+        {
+          "label": "腹膜透析",
+          "url": "/peritoneal-dialysis/"
+        },
+        {
+          "label": "数字で見る透析医療",
+          "url": "/dialysis-care/"
+        },
+        {
+          "label": "3院の比較（人工透析をお探しの方へ）",
+          "url": "/dialysis-clinics/"
+        }
+      ]
+    },
+    {
+      "label": "地域連携活動",
+      "url": "/community-partners/"
+    },
+    {
+      "label": "よくあるご質問",
+      "url": "/faq/"
+    },
+    {
+      "label": "お知らせ",
+      "url": "/news/"
+    },
+    {
+      "label": "採用情報",
+      "url": "/recruit/"
+    }
+  ],
+  "footer_menus": [
+    {
+      "heading": "施設案内",
+      "items": [
+        {
+          "label": "自由が丘",
+          "url": "/jiyugaoka-clinic/"
+        },
+        {
+          "label": "戸越",
+          "url": "/togoshi-clinic/"
+        },
+        {
+          "label": "久が原",
+          "url": "/kugahara-clinic/"
+        },
+        {
+          "label": "在宅診療部",
+          "url": "/home-medical-care/"
+        }
+      ]
+    },
+    {
+      "heading": "透析医療について",
+      "items": [
+        {
+          "label": "透析医療の基礎知識",
+          "url": "/dialysis-basics/"
+        },
+        {
+          "label": "血液透析",
+          "url": "/hemodialysis/"
+        },
+        {
+          "label": "腹膜透析",
+          "url": "/peritoneal-dialysis/"
+        },
+        {
+          "label": "数字で見る透析医療",
+          "url": "/dialysis-care/"
+        },
+        {
+          "label": "3院の比較（人工透析をお探しの方へ）",
+          "url": "/dialysis-clinics/"
+        }
+      ]
+    },
+    {
+      "heading": "医院について",
+      "items": [
+        {
+          "label": "理事長メッセージ",
+          "url": "/message/"
+        },
+        {
+          "label": "5つの医療",
+          "url": "/five-medical-services/"
+        },
+        {
+          "label": "地域連携活動",
+          "url": "/community-partners/"
+        },
+        {
+          "label": "よくあるご質問",
+          "url": "/faq/"
+        },
+        {
+          "label": "お知らせ",
+          "url": "/news/"
+        },
+        {
+          "label": "採用情報",
+          "url": "/recruit/"
+        },
+        {
+          "label": "個人情報の取り扱いについて",
+          "url": "/privacy-policy/"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright © 柴垣医院 All Rights Reserved.",
+  "production": false,
+  "production_base_url": "https://shibagaki.clinic"
+}

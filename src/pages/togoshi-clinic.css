@@ -1,0 +1,549 @@
+#main article .togoshi-page {
+    margin: 0;
+  }
+
+  #main article .togoshi-page__lead-photo {
+    margin: 0 0 54px;
+  }
+
+  #main article .togoshi-page__lead-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #main article .togoshi-page__hero {
+    display: grid;
+    grid-template-columns: minmax(0, 48%) minmax(0, 52%);
+    margin: 0 0 42px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(50, 50, 50, .06);
+  }
+
+  #main article .togoshi-page__hero-copy {
+    display: grid;
+    align-content: center;
+    padding: 52px 9%;
+  }
+
+  #main article .togoshi-page__profile {
+    margin: 0 0 18px;
+    color: #526c6e;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: .1em;
+  }
+
+  #main article .togoshi-page__profile > .togoshi-page__profile-name {
+    font-size: 1.15em;
+    font-weight: 700;
+  }
+
+  #main article .togoshi-page__hero-copy h3 {
+    margin: 0;
+    padding: 0;
+    color: #424242;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 1.65;
+    letter-spacing: .08em;
+  }
+
+  #main article .togoshi-page__hero-image {
+    margin: 0;
+  }
+
+  #main article .togoshi-page__hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  #main article .togoshi-page__section {
+    margin: 0 0 70px;
+  }
+
+  #main article .togoshi-page__section > h3 {
+    margin: 0 0 28px;
+    padding: 10px 0 10px 22px;
+    border-left: 3px solid #6f8a8c;
+    color: #424242;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: .07em;
+  }
+
+  #main article .togoshi-page__section > p {
+    margin: 0 0 28px;
+    font-size: 16px;
+    line-height: 2.2;
+  }
+
+  #main article .togoshi-page__section > p:last-child {
+    margin-bottom: 0;
+  }
+
+  #main article .togoshi-page__quote {
+    margin: 38px 0;
+    padding: 28px 34px;
+    background: rgba(111, 138, 140, .08);
+    border: 0;
+    border-left: 3px solid #6f8a8c;
+    color: #424242;
+    font-size: 20px;
+    line-height: 1.9;
+    letter-spacing: .08em;
+  }
+
+  #main article .togoshi-page__doctor-profile {
+    margin: 82px 0 0;
+    padding: 52px 56px;
+    border-top: 1px solid rgba(111, 138, 140, .35);
+    background: rgba(111, 138, 140, .05);
+  }
+
+  #main article .togoshi-page__doctor-profile h2,
+  #main article .togoshi-page__information-title {
+    margin: 0 0 34px;
+    color: #424242;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: .08em;
+  }
+
+  #main article .togoshi-page__doctor-name {
+    margin: 0 0 8px;
+    color: #424242;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  #main article .togoshi-page__doctor-role {
+    margin: 0 0 28px;
+    color: #526c6e;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+
+  #main article .togoshi-page__profile-block {
+    margin: 0 0 30px;
+  }
+
+  #main article .togoshi-page__profile-block:last-child {
+    margin-bottom: 0;
+  }
+
+  #main article .togoshi-page__profile-block h3 {
+    margin: 0 0 12px;
+    padding: 0;
+    color: #526c6e;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  #main article .togoshi-page__profile-block p,
+  #main article .togoshi-page__qualifications {
+    margin: 0;
+    color: #424242;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  #main article .togoshi-page__qualifications {
+    padding-left: 1.4em;
+  }
+
+  #main article .togoshi-page__qualifications li {
+    margin: 0 0 5px;
+  }
+
+  #main article .togoshi-page__information {
+    margin: 82px 0 0;
+    padding-top: 64px;
+    border-top: 1px solid rgba(111, 138, 140, .35);
+  }
+
+  #main article .togoshi-page__information-title {
+    margin-bottom: 42px;
+  }
+
+  #main article .togoshi-page__info-section {
+    margin: 0 0 64px;
+  }
+
+  #main article .togoshi-page__info-section:last-child {
+    margin-bottom: 0;
+  }
+
+  #main article .togoshi-page__info-section h3 {
+    margin: 0 0 26px;
+    padding: 10px 0 10px 22px;
+    border-left: 3px solid #6f8a8c;
+    color: #424242;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: .07em;
+  }
+
+  #main article .togoshi-page__departments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #main article .togoshi-page__departments li {
+    margin: 0;
+    padding: 11px 18px;
+    border: 1px solid rgba(111, 138, 140, .5);
+    background: rgba(111, 138, 140, .06);
+    color: #424242;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #main article .togoshi-page__hours-note,
+  #main article .togoshi-page__closed-note,
+  #main article .togoshi-page__access p,
+  #main article .togoshi-page__facility-intro {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  #main article .togoshi-page__table-wrap {
+    overflow-x: auto;
+    margin: 0 0 18px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #main article .togoshi-page__hours-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+    color: #424242;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  #main article .togoshi-page__hours-table th,
+  #main article .togoshi-page__hours-table td {
+    padding: 13px 10px;
+    border: 1px solid #d7dfe0;
+  }
+
+  #main article .togoshi-page__hours-table thead th {
+    background: #e8eeee;
+    color: #424242 !important;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #main article .togoshi-page__hours-table thead th:first-child {
+    text-align: left;
+  }
+
+  #main article .togoshi-page__hours-table tbody th {
+    background: rgba(111, 138, 140, .09);
+    color: #424242 !important;
+    font-weight: 500;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  #main article .togoshi-page__access {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+  }
+
+  #main article .togoshi-page__access-card {
+    padding: 28px 30px;
+    background: rgba(111, 138, 140, .06);
+  }
+
+  #main article .togoshi-page__access-card h4 {
+    margin: 0 0 14px;
+    color: #526c6e;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  #main article .togoshi-page__access-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  #main article .togoshi-page__map {
+    margin: 28px 0 0;
+  }
+
+  #main article .togoshi-page__map iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+  }
+
+  #main article .togoshi-page__facility-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 34px 28px;
+  }
+
+  #main article .togoshi-page__facility-card {
+    margin: 0;
+  }
+
+  #main article .togoshi-page__facility-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  #main article .togoshi-page__facility-card figcaption {
+    padding: 18px 2px 0;
+    color: #424242;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  #main article .togoshi-page__facility-card strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #526c6e;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  #main article .togoshi-page__standards {
+    margin: 82px 0 0;
+    padding-top: 64px;
+    border-top: 1px solid rgba(111, 138, 140, .35);
+  }
+
+  #main article .togoshi-page__standards-title {
+    margin: 0 0 42px;
+    color: #424242;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: .08em;
+  }
+
+  #main article .togoshi-page__standard-section {
+    margin: 0;
+    padding: 36px 0;
+    border-top: 1px solid #d9e1e1;
+  }
+
+  #main article .togoshi-page__standard-section:last-child {
+    padding-bottom: 0;
+  }
+
+  #main article .togoshi-page__standard-section h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #526c6e;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  #main article .togoshi-page__standard-section h4 {
+    margin: 26px 0 12px;
+    color: #424242;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+
+  #main article .togoshi-page__standard-section p,
+  #main article .togoshi-page__standard-list {
+    margin: 0 0 18px;
+    color: #424242;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  #main article .togoshi-page__standard-section p:last-child,
+  #main article .togoshi-page__standard-list:last-child {
+    margin-bottom: 0;
+  }
+
+  #main article .togoshi-page__standard-list {
+    padding-left: 1.4em;
+  }
+
+  #main article .togoshi-page__standard-list li {
+    margin: 0 0 6px;
+  }
+
+  @media screen and (max-width: 700px) {
+    #main article .togoshi-page__lead-photo {
+      margin-bottom: 38px;
+    }
+
+    #main article .togoshi-page__lead-photo img {
+      aspect-ratio: 4 / 3;
+    }
+
+    #main article .togoshi-page__hero {
+      grid-template-columns: 1fr;
+      margin-bottom: 36px;
+    }
+
+    #main article .togoshi-page__hero-copy {
+      padding: 34px 28px 38px;
+    }
+
+    #main article .togoshi-page__profile {
+      font-size: 14px;
+    }
+
+    #main article .togoshi-page__hero-copy h3 {
+      font-size: 23px;
+    }
+
+    #main article .togoshi-page__hero-image img {
+      min-height: 0;
+      aspect-ratio: 4 / 3;
+    }
+
+    #main article .togoshi-page__section {
+      margin-bottom: 52px;
+    }
+
+    #main article .togoshi-page__section > h3 {
+      padding-left: 16px;
+      font-size: 21px;
+    }
+
+    #main article .togoshi-page__section > p {
+      font-size: 15px;
+      line-height: 2.1;
+    }
+
+    #main article .togoshi-page__quote {
+      margin: 30px 0;
+      padding: 22px 24px;
+      font-size: 18px;
+    }
+
+    #main article .togoshi-page__doctor-profile {
+      margin-top: 60px;
+      padding: 42px 24px;
+    }
+
+    #main article .togoshi-page__doctor-profile h2,
+    #main article .togoshi-page__information-title {
+      font-size: 23px;
+    }
+
+    #main article .togoshi-page__doctor-name {
+      font-size: 21px;
+    }
+
+    #main article .togoshi-page__profile-block p,
+    #main article .togoshi-page__qualifications {
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    #main article .togoshi-page__information {
+      margin-top: 60px;
+      padding-top: 48px;
+    }
+
+    #main article .togoshi-page__information-title {
+      margin-bottom: 34px;
+    }
+
+    #main article .togoshi-page__info-section {
+      margin-bottom: 50px;
+    }
+
+    #main article .togoshi-page__info-section h3 {
+      padding-left: 16px;
+      font-size: 21px;
+    }
+
+    #main article .togoshi-page__departments {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    #main article .togoshi-page__departments li {
+      padding: 10px 12px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    #main article .togoshi-page__hours-note,
+    #main article .togoshi-page__closed-note,
+    #main article .togoshi-page__access p,
+    #main article .togoshi-page__facility-intro {
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    #main article .togoshi-page__access,
+    #main article .togoshi-page__facility-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    #main article .togoshi-page__access-card {
+      padding: 22px 24px;
+    }
+
+    #main article .togoshi-page__map {
+      margin-top: 24px;
+    }
+
+    #main article .togoshi-page__map iframe {
+      height: 340px;
+    }
+
+    #main article .togoshi-page__standards {
+      margin-top: 60px;
+      padding-top: 48px;
+    }
+
+    #main article .togoshi-page__standards-title {
+      margin-bottom: 34px;
+      font-size: 23px;
+    }
+
+    #main article .togoshi-page__standard-section {
+      padding: 30px 0;
+    }
+
+    #main article .togoshi-page__standard-section h3 {
+      font-size: 20px;
+    }
+
+    #main article .togoshi-page__standard-section p,
+    #main article .togoshi-page__standard-list {
+      font-size: 15px;
+      line-height: 1.9;
+    }
+  }

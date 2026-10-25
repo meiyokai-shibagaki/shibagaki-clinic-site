@@ -1,0 +1,375 @@
+.dialysis-basics-page,
+  .dialysis-basics-page * {
+    box-sizing: border-box;
+  }
+
+  #main article .dialysis-basics-page {
+    margin: 0;
+    color: #424242;
+  }
+
+  #main article .dialysis-basics-page p {
+    font-size: 16px;
+    line-height: 2.1;
+  }
+
+  #main article .dialysis-basics-page__lead {
+    margin: 0 0 42px;
+    padding: 28px 32px;
+    border-top: 1px solid rgba(111, 138, 140, .45);
+    border-bottom: 1px solid rgba(111, 138, 140, .45);
+    background: rgba(111, 138, 140, .08);
+  }
+
+  #main article .dialysis-basics-page__lead > p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 2.05;
+  }
+
+  #main article .dialysis-basics-page__nav {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0 0 72px;
+  }
+
+  #main article .dialysis-basics-page__nav-link {
+    display: flex;
+    min-height: 108px;
+    padding: 18px 14px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(111, 138, 140, .3);
+    color: #424242;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s ease, border-color .2s ease;
+  }
+
+  #main article .dialysis-basics-page__nav-link:hover,
+  #main article .dialysis-basics-page__nav-link:focus-visible {
+    border-color: #6f8a8c;
+    background: rgba(111, 138, 140, .08);
+  }
+
+  #main article .dialysis-basics-page__nav-number {
+    margin: 0 0 8px;
+    color: #526c6e;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  #main article .dialysis-basics-page__nav-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  #main article .dialysis-basics-page__section {
+    margin: 0 0 78px;
+    scroll-margin-top: 24px;
+  }
+
+  #main article .dialysis-basics-page__heading {
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr);
+    align-items: center;
+    gap: 18px;
+    margin: 0 0 30px;
+    padding: 0 0 15px;
+    border-bottom: 1px solid rgba(111, 138, 140, .32);
+  }
+
+  #main article .dialysis-basics-page__heading-number {
+    color: #526c6e;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+  }
+
+  #main article .dialysis-basics-page__heading-text {
+    margin: 0;
+    padding: 7px 0 7px 20px;
+    border-left: 3px solid #6f8a8c;
+    color: #424242;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: .05em;
+  }
+
+  #main article .dialysis-basics-page__eyecatch {
+    overflow: hidden;
+    margin: 0 0 30px;
+    border: 1px solid rgba(111, 138, 140, .2);
+    background: #fff;
+  }
+
+  #main article .dialysis-basics-page__eyecatch img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  #main article .dialysis-basics-page__intro {
+    margin: 0 0 20px;
+    color: #536f72;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+  }
+
+  #main article .dialysis-basics-page__body {
+    margin: 0;
+  }
+
+  #main article .dialysis-basics-page__functions {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #main article .dialysis-basics-page__function {
+    min-height: 144px;
+    padding: 23px 17px 20px;
+    border-top: 3px solid #6f8a8c;
+    background: #fbfdfc;
+    box-shadow: 0 7px 20px rgba(50, 50, 50, .045);
+  }
+
+  #main article .dialysis-basics-page__function-number {
+    display: block;
+    margin: 0 0 12px;
+    color: #526c6e;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  #main article .dialysis-basics-page__function-text {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.75;
+  }
+
+  #main article .dialysis-basics-page__choices {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 30px 0;
+  }
+
+  #main article .dialysis-basics-page__choice {
+    padding: 26px 22px 24px;
+    border: 1px solid rgba(111, 138, 140, .3);
+    background: #fff;
+    text-align: center;
+  }
+
+  #main article .dialysis-basics-page__choice-abbreviation {
+    display: block;
+    margin: 0 0 9px;
+    color: #526c6e;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    line-height: 1.2;
+  }
+
+  #main article .dialysis-basics-page__choice-title {
+    margin: 0;
+    color: #424242;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+
+  #main article .dialysis-basics-page__choice--transplant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #main article .dialysis-basics-page__note {
+    margin: 28px 0 0;
+    padding: 25px 28px;
+    border-left: 4px solid #b8aa78;
+    background: #f7f5ed;
+  }
+
+  #main article .dialysis-basics-page__note > p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  #main article .dialysis-basics-page__treatments {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  #main article .dialysis-basics-page__treatment {
+    padding: 30px 28px;
+    border-top: 3px solid #6f8a8c;
+    background: #fbfdfc;
+    box-shadow: 0 8px 24px rgba(50, 50, 50, .05);
+  }
+
+  #main article .dialysis-basics-page__treatment > .dialysis-basics-page__intro {
+    font-size: 18px;
+  }
+
+  #main article .dialysis-basics-page__treatment > .dialysis-basics-page__body {
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  @media screen and (max-width: 900px) {
+    #main article .dialysis-basics-page__nav {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #main article .dialysis-basics-page__functions {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #main article .dialysis-basics-page__function:last-child {
+      grid-column: 1 / -1;
+      width: calc(50% - 6px);
+      justify-self: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #main article .dialysis-basics-page p {
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    #main article .dialysis-basics-page__lead {
+      margin-bottom: 30px;
+      padding: 22px;
+    }
+
+    #main article .dialysis-basics-page__lead > p {
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    #main article .dialysis-basics-page__nav {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 54px;
+    }
+
+    #main article .dialysis-basics-page__nav-link {
+      min-height: 92px;
+      padding: 14px 10px;
+    }
+
+    #main article .dialysis-basics-page__nav-link:last-child {
+      grid-column: 1 / -1;
+      width: calc(50% - 4px);
+      justify-self: center;
+    }
+
+    #main article .dialysis-basics-page__nav-title {
+      font-size: 13px;
+    }
+
+    #main article .dialysis-basics-page__section {
+      margin-bottom: 58px;
+    }
+
+    #main article .dialysis-basics-page__heading {
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    #main article .dialysis-basics-page__heading-number {
+      font-size: 27px;
+    }
+
+    #main article .dialysis-basics-page__heading-text {
+      padding-left: 14px;
+      font-size: 21px;
+    }
+
+    #main article .dialysis-basics-page__eyecatch {
+      margin-bottom: 24px;
+    }
+
+    #main article .dialysis-basics-page__intro {
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+
+    #main article .dialysis-basics-page__functions,
+    #main article .dialysis-basics-page__choices,
+    #main article .dialysis-basics-page__treatments {
+      grid-template-columns: 1fr;
+    }
+
+    #main article .dialysis-basics-page__functions {
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    #main article .dialysis-basics-page__function,
+    #main article .dialysis-basics-page__function:last-child {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      min-height: 0;
+      padding: 17px 18px;
+    }
+
+    #main article .dialysis-basics-page__function-number {
+      margin: 0;
+    }
+
+    #main article .dialysis-basics-page__function-text {
+      font-size: 14px;
+    }
+
+    #main article .dialysis-basics-page__choices {
+      gap: 10px;
+      margin: 24px 0;
+    }
+
+    #main article .dialysis-basics-page__choice {
+      padding: 20px;
+    }
+
+    #main article .dialysis-basics-page__note,
+    #main article .dialysis-basics-page__treatment {
+      padding: 22px;
+    }
+
+    #main article .dialysis-basics-page__note > p,
+    #main article .dialysis-basics-page__treatment > .dialysis-basics-page__body {
+      font-size: 14px;
+    }
+
+    #main article .dialysis-basics-page__treatments {
+      gap: 14px;
+    }
+
+    #main article .dialysis-basics-page__treatment > .dialysis-basics-page__intro {
+      font-size: 17px;
+    }
+  }
